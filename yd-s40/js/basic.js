@@ -1,5 +1,5 @@
 ﻿$(function(){
-   // 1銆佸畨鍗撴墜鏈烘暟瀛楅敭鍥哄畾瀹氫綅澶辨晥瑙ｅ喅
+   // 1、android+fixed-form
         var h=$(window).height();
         $(window).resize(function() {
           if($(window).height()<h){
@@ -9,7 +9,7 @@
             $('.fot-scroll').show();
           }
         });
-      // 倒计时效果
+      // 2、倒计时效果
       var $year = $(".year");
       var $month = $(".month");
       var $date = $(".date");
@@ -42,16 +42,38 @@
       $year.text(myDate.getFullYear())
       $month.text(myDate.getMonth()+1)
       $date.text(myDate.getDate())
-      // loop-pop js
+      // 3、loop-pop js
       var $popup1 = $('.popup1');
       var $popup2 = $('.popup2');
       var $pop_mask = $('.pop-mask');
-      $('#element').showPopup($popup1,$pop_mask,500);
+      $('#element').showPopup($popup1,$pop_mask,5000);
       $(".popup-close1").click(function(){
         $('#element').hidePopup($popup1,$pop_mask);
-        $('#element').showPopup($popup2,$pop_mask,500);
+        $('#element').showPopup($popup2,$pop_mask,10000);
       })
       $(".popup-close2").click(function(){
         $('#element').hidePopup($popup2,$pop_mask);
       })
+      ///4、fot-scroll-info
+      var area = document.getElementById('div1');
+      area.innerHTML += area.innerHTML;
+      area.scrollTop = 0;
+      var timer;
+      function startMove(){
+        timer = setInterval(scrollUp,50);
+        area.scrollTop++;        
+      }
+      function scrollUp(){
+        if(area.scrollTop%50 === 0){
+          clearInterval(timer);
+          setTimeout(startMove,1000);
+        }
+        else{
+          area.scrollTop++;
+          if(area.scrollTop >= area.scrollHeight/2){
+            area.scrollTop = 0;
+          }
+        }
+      }
+      setTimeout(startMove,1000);
 });

@@ -1,0 +1,443 @@
+﻿@charset 'UTF-8';
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.no-ml{
+  margin-left:0!important;
+}
+.no-mt{
+  margin-top:0!important;
+}
+.no-bl{
+  border-left: none!important;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+body{
+  width:7.5rem;
+  margin:0 auto;
+}
+nav{
+  width: 7.5rem;
+  height: 1.0rem;
+  padding: 0.3rem 0;
+  background-color:rgb( 60, 70, 72 );
+  position: fixed;
+  left: 50%;
+  margin-left: -3.75rem;
+  top:0;
+  z-index: 100;
+}
+nav a{
+  width: 1.875rem;
+  font-size: 0.3rem;
+  color: rgb( 255, 255, 255 );
+  text-align: center;
+  border-left: 1px solid #fff;
+  float: left;
+}
+/*banner滚动信息 start*/
+.banner{
+  padding-top: 1rem;
+}
+.ban-scroll {
+  width: 7.5rem;
+  height: 50px;
+  padding: 8px 0.2rem 7px 0.15rem;
+  background: #bde8dd;
+}
+.ban-scroll #ban-info{
+ height:35px;
+ overflow:hidden;
+}
+.ban-scroll #ban-info a{
+ display:block;/*这个属性是必须的*/
+ width: 5.55rem;
+ padding-left: 0.1rem;
+ background: #eeeeee;
+ font-size: 0.24rem;
+ color:#000;
+ height: 35px;
+ line-height:35px;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+ letter-spacing: 2px;
+}
+.ban-btn {
+    width: 1.4rem;
+    height: 32px;
+    border-radius: 10px;
+    background-color: rgb(0, 169, 124);
+    box-shadow: 2px 3.464px 0px 0px rgb(64, 181, 151);
+    font-size: 0.24rem;
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+}
+/*banner滚动信息ending*/
+.s1{
+  padding-top: 0.7rem;
+}
+.s-titl-box{
+  text-align: center;
+}
+.s-titl{
+  font-size: 0.48rem;
+  color: #3c4648;
+  text-align: center;
+  letter-spacing: 0.08rem;
+  border-bottom: 1px solid #3c4648;
+  padding:0 0.2rem 0.2rem;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  float: left;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.s-yell{
+  color: rgb( 254, 145, 36 );
+  font-weight: bold;
+}
+.s-titl:before{
+  content: "";
+  display: block;
+  width: 0.36rem;
+  height: 0.4rem;
+  background: url(../images/yd_02.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left: -0.46rem;
+  bottom: -0.2rem;
+}
+.s-titl:after{
+  content: "";
+  display:block;
+  width: 70%;
+  border-bottom: 1px solid #3c4648; 
+  background: #3c4648;
+  position: absolute;
+  left:0;
+  bottom: -0.1rem;
+}
+.s1-items{
+  padding: 0 0.1rem;
+}
+.s1-item{
+  width: 2.3rem;
+  height: 1.3rem;
+  padding-top: 0.7rem;
+  border: 1px solid rgb( 194, 208, 255 );
+  border-radius: 0.1rem;
+  background-color: rgb( 242, 245, 255 );
+  box-shadow: 0.5px 2px 4px 0px rgba(74, 91, 146, 0.39);
+  font-size: 0.32rem;
+  color: rgb( 60, 70, 72 );
+  text-align: center;
+  position: relative;
+  margin: 1.4rem 0 0 0.2rem;
+  float: left;
+}
+.s1-icon{
+  width: 0.99rem;
+  height: 1.07rem;
+  background: url(../images/yd_03.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.495rem;
+  top:-0.52rem;
+}
+.s-btn{
+  width: 5.14rem;
+  height: 0.71rem;
+  background: url(../images/yd_10.png) no-repeat center;
+  background-size: contain;
+  font-size: 0.32rem;
+  color: rgb( 255, 255, 255 );
+  line-height: 0.65rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin: 0 auto;
+}
+.s1-btn{
+  margin-top: 0.7rem;
+}
+/* common zixun css */
+.s-zx{
+  height: 1.0rem;
+  padding: 0.1rem 0.2rem;
+  background: #bde8dd;
+  margin-top: 0.7rem;
+}
+.s-zx-nm{
+  width: 1.0rem;
+  font-size: 0.22rem;
+  color: rgb( 0, 0, 0 );
+  text-align: center;
+  line-height: 0.4rem;
+}
+.s-zx-nm span{
+      color: #fc5e17;
+}
+.s-zx-ip{
+  width: 3.7rem;
+  height: 0.6rem;
+  border-radius: 0.1rem;
+  background-color: rgb( 238, 238, 238 );
+  margin: 0.1rem 0 0 0.1rem;
+}
+.s-zx-ip input{
+  font-size: 0.24rem;
+  color: #000;
+  line-height: 0.6rem;
+  border: none;
+  background: none;
+  padding-left: 0.2rem;
+  width: 100%;
+  float: left;
+  outline: none;
+}
+.s-zx-btn{
+width: 1.4rem;
+    height: 0.6rem;
+    border-radius: 0.1rem;
+  background-color: rgb(0, 169, 124);
+    box-shadow: 2px 3.464px 0px 0px rgb(64, 181, 151);
+    font-size: 0.24rem;
+    color: #fff;
+    line-height: 0.6rem;
+    text-align: center;
+    margin-top: 0.1rem;
+}
+.s-zx-tx{
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  float: left;
+}
+/* common zixun css */
+.s2{
+  background: url(../images/yd_11.jpg) no-repeat center;
+  background-size: cover;
+  padding-top:0.7rem;
+}
+.s3{
+  padding-top:0.7rem;
+}
+.s3-items{
+  position: relative;
+  margin-top: 0.4rem;
+}
+.s3-btn{
+  position: absolute;
+  left: 50%;
+  margin-left: -2.57rem;
+  bottom: 0;
+}
+.s4{
+  padding-top:0.7rem;
+  background: #f5f5f5;
+}
+.swiper-container1{
+  margin-top: 1.0rem;
+}
+.s5{
+  padding-top: 0.2rem;
+}
+.s5-items{
+  padding: 0 0.1rem;
+}
+.s5-item{
+  background:url(../images/yd_22.png) no-repeat center;
+  background-size: contain; 
+  margin-top: 0.4rem;
+}
+.s5-item dt{
+  width: 1.6rem;
+  padding-left: 0.1rem;
+  font-size: 0.24rem;
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  line-height:0.6rem;
+  float: left;
+}
+.s5-item dd{
+ font-size: 0.26rem;
+ color: rgb( 255, 255, 255 );
+ line-height:0.6rem;
+ text-align: center;
+ float: left;
+}
+.s5-dd1{
+  width: 1.35rem;
+}
+.s5-dd2{
+  width: 1.5rem;
+}
+.s5-dd3{
+  width: 1.4rem;
+}
+.s5-dd4{
+  width: 1.4rem;
+}
+.s6{
+  background: #f5f5f5;
+  padding-top: 0.7rem;
+}
+.s6-ask{
+  width: 7.1rem;
+  margin: 0 auto;
+    border: 1px solid rgb( 1, 191, 143 );
+    background-color: rgb( 242, 255, 252 );
+  padding: 0.1rem;
+  margin-top: 0.5rem;
+}
+.s6-form{
+      border: 1px dashed rgb( 1, 191, 143 );
+  padding: 0.2rem;
+}
+.s6-title{
+  width: 2.49rem;
+  height: 0.32rem;
+  margin: 0 auto;
+}
+.s6-subt{
+  font-size: 0.3rem;
+  color: rgb( 60, 70, 72 );
+  line-height: 0.44rem;
+  font-weight: bold;
+  padding-left: 0.1rem;
+}
+.s6-iframe{
+  height: 50px;
+  position: relative;
+}
+.s6 iframe{
+  display: block;
+}
+.s6-online-inp{
+  width: 3.97rem;  640
+  height: 36px;
+  background: #fff;
+  border: 1px solid #a19a9a;
+  box-sizing: border-box;
+  outline: none!important;
+  font-size: 14px;
+  border-radius: 5px;
+      line-height: 36px;
+    padding-left: 5px;
+        color: #666;
+            margin-left: 5px;
+}
+.s6-online-btn{
+  width: 2.24rem;
+  height: 36px;
+    line-height: 36px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    background-image: -moz-linear-gradient( 90deg, rgb(1,115,86) 0%, rgb(0,221,165) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(1,115,86) 0%, rgb(0,221,165) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(1,115,86) 0%, rgb(0,221,165) 100%);
+}
+.s6-items{
+  padding: 0 0.2rem;
+  margin-top: 0.4rem;
+}
+.s6-item{
+  border-bottom: 1px dashed #3c4648;
+  margin-top: 0.22rem;
+}
+.s6-item dt{
+  width: 5.4rem;
+  font-size: 0.26rem;
+  color: rgb( 60, 70, 72 );
+  line-height: 0.69rem;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+      letter-spacing: 0.05rem;
+    font-weight: bold;
+}
+
+.s6-item dd{
+  width: 1.64rem;
+  height: 0.49rem;
+  background: url(../images/yd_24.png) no-repeat center;
+  background-size: contain;
+   font-size: 0.26rem;
+  color: rgb( 255, 255, 255 );
+  text-align: center;
+  line-height: 0.49rem;
+  float: right;
+  margin-top: 0.1rem;
+}
+.s6-btn{
+  margin-top: 0.5rem;
+}
+.copyright{
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  line-height: 24px;
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
+/*底部滚动信息*/
+.fot-scroll {
+  width: 7.5rem;
+  padding: 0 0.15rem;
+  background:#ccc;
+  height: 50px;
+  position: fixed;
+  left: 50%;
+  margin-left: -3.75rem;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+.fot-scroll #fot-info{
+ height:50px;
+ overflow:hidden;
+}
+.fot-scroll #fot-info a{
+ display:block;/*这个属性是必须的*/
+ font-size:14px;
+ line-height:50px;
+ color:#000;
+ width: 5.2rem;
+ letter-spacing: 3px;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+.fot-btn {
+  width: 2.0rem;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #01bf8f;
+  font-size: 14px;
+  color: rgb( 255, 255, 255 );
+  line-height: 35px;
+  text-align: center;
+  margin-top: 8px;
+}
+/*底部滚动信息*/
