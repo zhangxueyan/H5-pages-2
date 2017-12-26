@@ -1,5 +1,5 @@
 ﻿$(function(){
-    // 1、android+fixed-form
+	    // 1、android+fixed-form
         var h=$(window).height();
         $(window).resize(function() {
           if($(window).height()<h){
@@ -9,8 +9,32 @@
             $('.fot-scroll').show();
           }
         });
-      //2、ban-fot-scroll-info
-      var banInfo = document.getElementById('ban-info');//fot
+// 2、Deadline for registration
+	var $month = $(".month");
+	var $date = $(".date");
+	var $year = $(".year");
+	var myDate = new Date();
+	var date = myDate.getDate();
+	var day = myDate.getDay();
+	if(day == 0){
+		myDate.setDate(date+3);   
+	}else if(day == 1){
+		myDate.setDate(date+2);
+	}else if(day == 2){
+		myDate.setDate(date+1);
+	}else if(day == 3){
+		myDate.setDate(date+2);
+	}else if(day == 4){
+		myDate.setDate(date+1);
+	}else if(day == 5){
+		myDate.setDate(date+2);
+	}else if(day == 6){
+		myDate.setDate(date+1);
+	}
+	$year.text(myDate.getFullYear());
+	$month.text(myDate.getMonth()+1);
+	$date.text(myDate.getDate());
+ //2、ban-fot-scroll-info
       var fotInfo = document.getElementById('fot-info');//ban
       function infoScroll(area,height){
         area.innerHTML += area.innerHTML;
@@ -34,15 +58,5 @@
         }
         setTimeout(startMove,500);
       }
-      infoScroll(banInfo,35)
       infoScroll(fotInfo,50)
-     //4、swiper-scroll swiper-container1
-      var mySwiper1 = new Swiper ('.swiper-container1', {
-        autoplay : 3000,
-        loop: true,
-        autoplayDisableOnInteraction : false,
-        slidesPerView: 2,
-        centeredSlides: true,
-        effect : 'coverflow'
-      })
 });

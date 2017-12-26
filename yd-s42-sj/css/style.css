@@ -138,10 +138,10 @@ nav a{
   width: 2.3rem;
   height: 1.3rem;
   padding-top: 0.7rem;
-  border: 1px solid rgb( 194, 208, 255 );
+  border: 1px solid rgb( 150, 229, 210 );
   border-radius: 0.1rem;
-  background-color: rgb( 242, 245, 255 );
-  box-shadow: 0.5px 2px 4px 0px rgba(74, 91, 146, 0.39);
+  background-color: rgb( 242, 255, 252 );
+  box-shadow: 2.5px 4.33px 5px 0px rgba( 2, 111, 85,0.39 );
   font-size: 0.32rem;
   color: rgb( 60, 70, 72 );
   text-align: center;
@@ -198,7 +198,7 @@ nav a{
   background-color: rgb( 238, 238, 238 );
   margin: 0.1rem 0 0 0.1rem;
 }
-.s-zx-ip input{
+.s-zx-ip p{
   font-size: 0.24rem;
   color: #000;
   line-height: 0.6rem;
