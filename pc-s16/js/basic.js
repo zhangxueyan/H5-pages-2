@@ -4,8 +4,7 @@
        loop: true,
        pagination: '.swiper-pagination',
        paginationClickable :true,
-       autoplay:3000,
-       speed:1800
+       autoplay:3000
     })
     $(".swiper-container1").mouseenter(function(){
       mySwiper1.stopAutoplay()
@@ -98,10 +97,11 @@
       infoScroll(s0Info,50)
      // s5-round
      var $s5_ring = $(".s5-ring");
-     $s5_ring.mouseenter(function(){
-       $(this).addClass("s5-stop")
+     var $s5_item = $(".s5-item");
+     $s5_item.mouseenter(function(){
+       $s5_ring.addClass("s5-stop")
      }).mouseleave(function(){
-       $(this).removeClass("s5-stop")
+       $s5_ring.removeClass("s5-stop")
      })
 
   })
