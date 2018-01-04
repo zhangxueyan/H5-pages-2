@@ -21,10 +21,10 @@
   //head-pop-tc
     var $popup1 = $('.popup1');
     var $popup2 = $('.popup2');
-    $('#element').showPopup($popup1,500);
+    $('#element').showPopup($popup1,1000);
     $(".popup-close1").click(function(){
       $('#element').hidePopup($popup1);
-      $('#element').showPopup($popup2,2000);
+      $('#element').showPopup($popup2,3000);
     })
     $(".popup-close2").click(function(){
       $('#element').hidePopup($popup2);
@@ -71,21 +71,37 @@
       $month.text(myDate.getMonth()+1);
       $date.text(myDate.getDate());
       // scroll info
-      var box = document.getElementById('s0-info'),can=true;
-      box.innerHTML+=box.innerHTML;
-      box.onmouseover=function(){can=false};
-      box.onmouseout=function(){can=true};
-      new function (){
-       var stop=box.scrollTop%50==0&&!can;
-       if(!stop)box.scrollTop==parseInt(box.scrollHeight/2)?box.scrollTop=0:box.scrollTop++;
-       setTimeout(arguments.callee,box.scrollTop%50?20:1500);
-     };
+      var s0Info = document.getElementById('s0-info');
+      function infoScroll(area,lineheight){
+        area.innerHTML+= area.innerHTML;
+        area.scrollTop=0;
+        var timer=null,timeout=null;
+        function startMove(){
+         timer = setInterval(scrollUp,20)
+         area.scrollTop++
+        }
+        function scrollUp(){
+         if(area.scrollTop%lineheight===0){
+          clearInterval(timer);
+          timeout = setTimeout(startMove,1000);
+          }else{
+          area.scrollTop++
+          if(area.scrollTop>=area.scrollHeight/2){
+            area.scrollTop = 0;
+          }
+         }
+        }
+        timeout = setTimeout(startMove,1000);
+        area.onmouseover = function(){clearInterval(timer);clearTimeout(timeout);}
+        area.onmouseout = function(){timer=setInterval(scrollUp,20)}
+      }
+      infoScroll(s0Info,50)
      // s5-round
      var $s5_ring = $(".s5-ring");
      $s5_ring.mouseenter(function(){
        $(this).addClass("s5-stop")
      }).mouseleave(function(){
-      $(this).removeClass("s5-stop")
+       $(this).removeClass("s5-stop")
      })
 
   })
