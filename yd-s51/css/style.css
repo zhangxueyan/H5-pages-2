@@ -1,0 +1,397 @@
+﻿@charset 'UTF-8';
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.no-ml{
+  margin-left:0!important;
+}
+.no-mt{
+  margin-top:0!important;
+}
+.no-bl{
+  border-left: none!important;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+/*循环弹窗*/
+.popup{
+  width: 6.5rem;
+  height: 8.2rem;
+  padding: 2.25rem 0 0 0.6rem;
+  background: url(../images/yd_19.png) no-repeat center;
+  background-size: contain;
+  position: fixed;
+  left: 50%;
+  margin-left: -3.25rem;
+  top: 50%;
+  margin-top: -4.1rem;
+  z-index: 3000;
+  display: none;
+}
+.popup-close{
+  width: 0.6rem;
+  height: 0.6rem;
+  position: absolute;
+  right: 0.05rem;
+  top: 0.5rem;
+}
+.poptime{
+  position: absolute;
+  left: 1.0rem;
+  top: 1.6rem;
+}
+.poptime span{
+  display: block;
+  float: left;
+  font-size: 16px;
+  color: #999999;
+  line-height: 0.65rem;
+}
+.pop-msg1{
+  width: 4.96rem;
+  height: 0.71rem;
+  background: url(../images/yd_20.png) no-repeat center;
+  background-size: contain;
+}
+.pop-msg2{
+  width: 4.96rem;
+  height: 1.83rem;
+  background: url(../images/yd_21.png) no-repeat center;
+  background-size: contain;
+  margin-top: 0.4rem;
+  display: none;
+}
+.pop-msg3{
+  width: 4.96rem;
+  height: 0.71rem;
+  background: url(../images/yd_22.png) no-repeat center;
+  background-size: contain;
+  margin-top: 0.4rem;
+  display: none;
+}
+.pop-edit{
+  width: 6.5rem;
+  height: 1.3rem;
+  position: absolute;
+  left: 0;
+  bottom: 0.1rem;
+}
+.pop-mask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2000;
+  display: none;
+}
+/*循环弹窗*/
+body{
+  width:7.5rem;
+  margin:0 auto;
+  padding-top: 1.0rem;
+}
+nav{
+  height: 1.0rem;
+  padding: 0.3rem 0;
+  background:rgb( 53, 56, 75 );
+  background-size: contain;
+  position: fixed;
+  left: 50%;
+  margin-left: -3.75rem;
+  top:0;
+  z-index: 100;
+}
+nav a{
+  width: 1.875rem;
+  font-size: 0.3rem;
+  color: #fff;
+  text-align: center;
+  border-left: 1px solid #fff;
+  float: left;
+  letter-spacing: 0.02rem;
+}
+.s1{
+  padding: 0.7rem 0;
+  border-bottom: 0.1rem solid #dedede;
+}
+.s1-time{
+  font-size: 0;
+  text-align: center;
+  margin-top: 0.6rem;
+  padding-left: 0.4rem;
+}
+.s1-time span{
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.93rem;
+  background: url(../images/yd_03.png) no-repeat center;
+  background-size: contain;
+  font-size: 1.1rem;
+  color: rgb( 53, 56, 75 );
+  text-align: center;
+  line-height: 1.93rem;
+}
+.s1-time em{
+  display: inline-block;
+  width: 0.7rem;
+  font-size: 0.3rem;
+  color: #35384b;
+}
+.s-btn{
+  width: 5.6rem;
+  height: 0.75rem;
+  margin:0.6rem auto 0;
+  background: url(../images/yd_04.png) no-repeat center;
+  background-size: contain;
+  font-size: 0.34rem;
+  color: rgb( 255, 255, 255 );
+  line-height: 0.75rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.s1-note{
+  background: rgb( 53, 56, 75 );
+  font-size: 0.24rem;
+  color: rgb( 255, 255, 255 );
+  line-height:0.4rem;
+  text-align: center;
+  padding: 0.2rem 0.2rem;
+  margin-top:0.5rem;
+}
+.s1-rost{
+  width: 7.1rem;
+  padding: 0.25rem 0.1rem;
+  margin:0.75rem auto 0;
+  background: #35384b;
+  border-radius: 0.05rem;
+}
+.s1-roll{
+  background: #fff;
+  border-radius: 0.05rem;
+  position: relative;
+}
+.s1-subt{
+  width: 2.88rem;
+  height: 0.59rem;
+  background: url(../images/yd_06.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.44rem;
+  top:-0.7rem;
+}
+.s1-head,.s1-rollItem{
+  font-size: 0;
+  text-align: center;
+}
+.s1-rollItem span,.s1-head span{
+  display: inline-block;
+  width: 2.3rem;
+  font-size: 0.28rem;
+  color: rgb( 53, 56, 75 );
+  line-height: 40px;
+}
+#s1-roll{
+  height: 160px;
+  overflow: hidden;
+}
+.s2{
+  padding: 0.6rem 0 0.8rem;
+  border-bottom: 0.1rem solid #dedede;
+}
+.s2-items{
+  width: 7.1rem;
+  background: url(../images/yd_08.png) no-repeat center;
+  background-size: contain;
+  margin:0.5rem auto 0;
+}
+.s2-item{
+  width: 2.3rem;
+  height: 1.6rem;
+  font-size: 0.3rem;
+  padding-top: 1.0rem;
+  text-align: center;
+  float: left;
+  margin: 0.1rem 0 0 0.1rem;
+  letter-spacing: 0.05rem;
+}
+.s2-blue{
+  color: rgb( 53, 56, 75 );
+}
+.s2-whit{
+  color:rgb(255,255,255);
+}
+.s2-half{
+  width: 3.5rem;
+}
+.s3{
+  padding: 0.7rem 0;
+  border-bottom: 0.1rem solid #dedede;
+}
+.s3-items{
+  width: 7.1rem;
+  margin: 0 auto;
+  background: url(../images/yd_10.png) no-repeat top;
+  background-size: contain;
+}
+.s3-item{
+  width: 2.2rem;
+  height: 1.9rem;
+  padding-top: 1.4rem;
+  float: left;
+  margin:0.7rem 0 0 0.25rem; 
+}
+.s3-item p{
+  width: 2.2rem;
+  border-radius: 5px;
+  background: rgb( 53, 56, 75 );
+  font-size: 0.3rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.52rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.s3-small{
+  font-size: 0.26rem!important;
+}
+.s3-buts{
+  padding: 0 0.5rem;
+}
+.s3-but{
+  display: block;
+  width:2.9rem;
+  height: 0.75rem;
+  margin: 0.6rem auto 0;
+  background: url(../images/yd_04.png) no-repeat center;
+  background-size: 100% 100%;
+  font-size: 0.34rem;
+  color: rgb( 255, 255, 255 );
+  line-height: 0.75rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.s4{
+  padding: 0.7rem 0;
+  border-bottom: 0.1rem solid #dedede;
+}
+.s4-items{
+  width: 7.1rem;
+  margin: 0 auto;
+  background: url(../images/yd_12.png) no-repeat center;
+  background-size: 100%;
+}
+.s4-item{
+  width: 2.2rem;
+  height: 0.84rem;
+  font-size: 0.32rem;
+  color: rgb( 53, 56, 75 );
+  line-height: 0.84rem;
+  text-align: center;
+  margin:0.56rem 0 0 0.25rem;
+  float: left;
+}
+.s5{
+  padding: 0.7rem 0 0.4rem;
+  border-bottom: 0.1rem solid #dedede;
+}
+.s5-item{
+  width: 7.1rem;
+  margin: 0.45rem auto 0;
+  padding: 0.6rem 0 0 0.5rem;
+}
+.s5-item1{
+  background: url(../images/yd_14.png) no-repeat top;
+  background-size: 100%;
+}
+.s5-item2{
+  background: url(../images/yd_15.png) no-repeat top;
+  background-size: 100%;
+}
+.s5-item3{
+  background: url(../images/yd_16.png) no-repeat top;
+  background-size: 100%;
+}
+.s5-item4{
+  background: url(../images/yd_17.png) no-repeat top;
+  background-size: 100%;
+}
+.s5-item5{
+  background: url(../images/yd_18.png) no-repeat top;
+  background-size: 100%;
+}
+.s5-item p{
+  font-size: 0.24rem;
+  color: rgb( 53, 56, 75 );
+  line-height: 0.4rem;
+  letter-spacing: 0.01rem;
+}
+.s5-but{
+  display: block;
+  width: 1.6rem;
+  height: 0.6rem;
+  background: url(../images/yd_04.png) no-repeat center;
+  background-size: 100% 100%;
+  font-size: 0.26rem;
+  color: rgb( 255, 255, 255 );
+  line-height: 0.6rem;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  margin: 0.1rem 0 0 5.0rem;
+}
+.copyright{
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
+/*底部滚动信息*/
+.fot-scroll {
+  width: 7.5rem;
+  padding: 0 0.15rem;
+  background:#ccc;
+  height: 50px;
+  position: fixed;
+  left: 50%;
+  margin-left: -3.75rem;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+.fot-scroll #fot-info{
+ height:50px;
+ overflow:hidden;
+}
+.fot-scroll #fot-info a{
+ display:block;/*这个属性是必须的*/
+ font-size:14px;
+ line-height:50px;
+ color:#000;
+ width: 5.2rem;
+ letter-spacing: 3px;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+.fot-btn {
+  width: 2.0rem;
+  height: 35px;
+  border-radius: 5px;
+  background: #f1632d;
+  font-size: 14px;
+  color: rgb( 255, 255, 255 );
+  line-height: 35px;
+  text-align: center;
+  margin-top: 8px;
+}
+/*底部滚动信息*/
