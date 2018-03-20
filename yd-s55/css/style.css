@@ -1,0 +1,213 @@
+﻿@charset 'UTF-8';
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.no-ml{
+	margin-left:0!important;
+}
+.no-mt{
+	margin-top:0!important;
+}
+.no-bl{
+	border-left: none!important;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+body{
+	width: 7.5rem;
+	margin: 0 auto;
+}
+.s1 h1{
+	font-size: 0.34rem;
+	color: rgb( 102, 102, 102 );
+	line-height: 0.88rem;
+	text-align: center;
+	letter-spacing: 0.02rem;
+	background: #eeeeee;
+}
+.s1 h2{
+	font-size: 0.38rem;
+	color: #1a1a1a;
+	line-height: 1.3rem;
+	text-align: center;
+	font-weight: bold;
+}
+.s1 h3{
+	font-size: 0.36rem;
+	color: #444444;
+	text-align: center;
+	line-height: 0.5rem;
+	padding: 0.4rem 0;
+	font-weight: bold;
+	border-bottom: 1px solid #ececec;
+}
+.s1 h3 span{
+	font-size:0.3rem;
+	color: #999999;
+	letter-spacing: 0.02rem;
+}
+.s1-items{
+	padding: 0 0.15rem;
+}
+.s1-item{
+	width: 1.8rem;
+	padding: 0.1rem 0;
+	border-left: 1px solid #e5e5e5;
+	float: left;
+	margin:0.36rem 0 0.4rem;
+}
+.s1-logo{
+	width: 0.56rem;
+	height: 0.56rem;
+	margin: 0 auto;
+}
+.s1-item p{
+	font-size: 0.3rem;
+	color: #ff6600;
+	text-align: center;
+	    font-weight: bold;
+	margin-top: 0.2rem;
+}
+.s2-titl{
+	font-size: 0.36rem;
+	color: rgb( 255, 255, 255 );
+	background: #4371c7;
+	line-height: 1.0rem;
+	text-align: center;
+	letter-spacing: 0.05rem;
+	margin: 0.2rem 0 0.1rem;
+}
+.iframe-wrap{
+	height: 430px;
+}
+.s3{
+	padding-top: 0.4rem;
+	border-top:1px solid #e3e3e3;
+}
+.s3-titl{
+	background-color: rgb( 255, 102, 0 );
+	font-size: 0.36rem;
+	color: rgb( 255, 255, 255 );
+	line-height: 1.0rem;
+	text-align: center;
+	letter-spacing: 0.05rem;
+}
+.s3-items{
+	width: 6.9rem;
+	margin: 0.6rem auto 0;
+}
+.s3-item{
+	width: 2.3rem;
+	font-size: 0.36rem;
+	line-height: 1.5rem;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 0.02rem;
+	float: left;
+}
+.s3-blue{
+   background: rgba( 67, 113, 199,0.149);
+   color: rgb( 255, 102, 0 );
+}
+.s3-yell{
+   background: rgba( 255, 102, 0,0.149);
+   color: rgb( 67, 113, 199 );
+}
+.s3-btn{
+	width: 6.9rem;
+	margin: 0.6rem auto 0;
+	border-radius: 0.05rem;
+	background-color: rgb( 67, 113, 199 );
+	box-shadow: 0px 1px 1px 1px rgb(74, 94, 130);
+	font-size: 0.32rem;
+	color: rgb( 255, 255, 255 );
+	line-height: 1.1rem;
+	text-align: center;
+	letter-spacing: 0.05rem;
+}
+
+.内部通道快速申请本科学历 {
+  font-size: 32.611px;
+  font-family: "SimSun";
+  color: rgb( 255, 255, 255 );
+  line-height: 0.613;
+  text-align: center;
+  text-indent: 20px;
+  -moz-transform: matrix( 1.165,0,0,1.16526610644258,0,0);
+  -webkit-transform: matrix( 1.165,0,0,1.16526610644258,0,0);
+  -ms-transform: matrix( 1.165,0,0,1.16526610644258,0,0);
+  position: absolute;
+  left: 141.724px;
+  top: 2742.975px;
+  z-index: 78;
+}
+
+
+.考试科目 {
+  font-size: 38px;
+  font-family: "AdobeHeitiStd";
+  color: rgb( 67, 113, 199 );
+  line-height: 0.526;
+  text-align: center;
+  text-indent: 20px;
+  position: absolute;
+  left: 529.516px;
+  top: 2090.344px;
+  z-index: 98;
+}
+
+.矩形_5_拷贝 {
+  
+  opacity: 0.149;
+  position: absolute;
+  left: 259px;
+  top: 2014px;
+  width: 231px;
+  height: 151px;
+  z-index: 85;
+}
+
+
+
+.矩形_4_拷贝 {
+  border-width: 2px;
+  border-color: rgb( 238, 238, 238 );
+  border-style: solid;
+  background-color: rgb( 255, 102, 0 );
+  position: absolute;
+  left: -24px;
+  top: 1852px;
+  width: 795px;
+  height: 97px;
+  z-index: 82;
+}
+
+.上海67所院校专业查询 {
+  font-size: 38px;
+  font-family: "SimSun";
+  color: rgb( 255, 255, 255 );
+  line-height: 0.526;
+  text-align: center;
+  text-indent: 20px;
+  position: absolute;
+  left: 185.219px;
+  top: 1904.344px;
+  z-index: 83;
+}
+
+
+
+
+
+.copyright{
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+	padding: 10px 0;
+}
