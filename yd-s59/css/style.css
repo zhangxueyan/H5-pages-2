@@ -1,0 +1,375 @@
+﻿@charset 'UTF-8';
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.no-ml{
+  margin-left:0!important;
+}
+.no-mt{
+  margin-top:0!important;
+}
+.no-bl{
+  border-left: none!important;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.no-mt{
+  margin-top:0!important;
+}
+.no-bt{
+  border-top:none!important;
+}
+body{
+  width:7.5rem;
+  margin:0 auto;
+}
+section{
+  margin-top:0.5rem;
+}
+.s-subt{
+  font-size: 0.26rem;
+  color: rgb( 56, 56, 56 );
+  text-align: center;
+  font-weight: bold;
+  border-top:1px solid rgb( 118, 187, 255 );
+  border-bottom:1px solid rgb( 118, 187, 255 );
+  padding: 0.2rem 0.75rem;
+  margin-top:0.2rem;
+}
+.s1-text{
+  width: 7.0rem;
+  border: 1px solid rgb( 118, 187, 255 );
+  margin: 0.2rem auto 0;
+  padding: 0 0.2rem 0.2rem 0.3rem;
+}
+.s1-text h4{
+  font-size: 0.26rem;
+  color: rgb( 56, 56, 56 );
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.0rem;
+}
+.s1-text p{
+  font-size: 0.24rem;
+  color: rgb( 56, 56, 56 );
+  line-height: 0.4rem;
+  text-align: left;
+  padding-left: 0.6rem;
+  position: relative;
+  margin-top: 0.15rem;
+}
+.s1-text p:before{
+  content: "";
+  display: block;
+  width: 0.27rem;
+  height: 0.27rem;
+  background: url(../images/yd_03.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top:0.1rem;
+}
+.s1-iframe{
+  width: 7.0rem;
+  margin: 0 auto;
+  height: 105px;
+  margin-top:0.1rem;
+}
+.if-note{
+  font-size: 0.24rem;
+  color: rgb( 56, 56, 56 );
+  text-align: center;
+}
+.s2-items{
+  padding: 0 0.25rem;
+  margin-top: 0.15rem;
+}
+.s2-item{
+  width: 3.5rem;
+  padding: 0.1rem 0 0.2rem;
+  float: left;
+}
+.s2-bg{
+  background: #fafafa;
+}
+.s2-div1{
+  width: 3.0rem;
+  height: 1.3rem;
+  border: 1px solid rgb( 118, 187, 255 );
+  position: relative;
+  margin:0 auto;
+}
+.s2-div1:before{
+  content: "";
+  display: block;
+  width: 0.27rem;
+  height: 0.27rem;
+  background: url(../images/yd_05.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.135rem;
+  bottom: -0.25rem;
+}
+.s2-div1 h3{
+  font-size: 0.3rem;
+  color: rgb( 56, 56, 56 );
+  text-align: center;
+  line-height: 0.72rem;
+}
+.s2-div1 h4{
+  font-size: 0.22rem;
+  color: rgb( 56, 56, 56 );
+  line-height: 0.34rem;
+  text-align: center;
+}
+.s2-div2{
+  width: 2.8rem;
+  margin: 0.4rem auto 0;
+}
+.s2-div2 p{
+  font-size: 0.24rem;
+  color: rgb( 56, 56, 56 );
+  line-height: 0.68rem;
+  text-align: center;
+  border-top: 1px dashed rgb( 118, 187, 255 );
+}
+.s-btn{
+  width: 7.0rem;
+  margin: 0.4rem auto 0;
+  background: rgb( 118, 187, 255 );
+  font-size: 0.3rem;
+  color: rgb( 255, 255, 255 );
+  line-height:0.88rem; 
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.s3-items{
+  padding: 0 0.25rem;
+  margin-top:0.8rem;
+}
+.s3-item{
+  width: 2.02rem;
+  background: url(../images/yd_07.png) no-repeat center;
+  background-size: contain;
+  font-size: 0.26rem;
+  color: rgb( 56, 56, 56 );
+  line-height:0.72rem;
+  text-align: center;
+  float: left;
+  margin:1.2rem 0 0 0.47rem;
+}
+.s4-items{
+  margin-top:0.7rem;
+}
+.s5-items{
+  padding: 0 0.5rem;
+}
+.s5-item{
+  width: 3.02rem;
+  float: left;
+  margin: 0.4rem 0 0 0.46rem;
+}
+.s5-pic{
+  position: relative;
+}
+.s5-pic p{
+  width: 100%;
+  background: rgba( 255, 255, 255,0.8);
+  font-size: 0.28rem;
+  color: rgb( 56, 56, 56 );
+  line-height: 0.7rem;
+  text-align: center;
+  letter-spacing: 0.06rem;
+  position: absolute;
+  left:0;
+  top:0.68rem;
+}
+.s5-but{
+ width: 3.0rem;
+ margin: 0.2rem auto 0;
+ background: rgb( 118, 187, 255 );
+ font-size: 0.24rem;
+ color: rgb( 255, 255, 255 );
+ text-align: center;
+ line-height: 0.6rem;
+ letter-spacing: 0.02rem;
+ border-radius: 0.3rem;
+}
+.s6-items{
+  padding: 0 0.5rem;
+}
+.s6-item{
+ width: 3.0rem;
+ border-radius: 0.15rem;
+ background-color: rgb( 255, 255, 255 );
+ border: 1px solid rgb( 79, 132, 196 );
+ font-size: 0.28rem;
+ color: rgb( 56, 56, 56 );
+ line-height: 1.2rem;
+ text-align: center;
+ letter-spacing: 0.03rem;
+ float: left;
+ margin:0.65rem 0 0 0.5rem;
+ position: relative;
+}
+.s6-but{
+  width: 1.95rem;
+  background: rgb( 118, 187, 255 );
+  border-radius: 0.25rem;
+  font-size: 0.24rem;
+  color: rgb( 255, 255, 255 );
+  line-height: 0.5rem;
+  text-align: center;
+  letter-spacing: 0.02rem;
+  position: absolute;
+  left: 0.9rem;
+  bottom:-0.25rem;
+}
+.s6-btn{
+  margin-top:0.7rem;
+}
+.s7-buts{
+  padding: 0 0.25rem;
+}
+.s7-but{
+ width: 2.0rem;
+ background: rgb( 255, 255, 255 );
+ border: 1px solid rgb( 118, 187, 255 );
+ border-bottom-right-radius: 0.2rem;
+ font-size: 0.26rem;
+ color: rgb( 56, 56, 56 );
+ line-height: 0.8rem;
+ text-align: center;
+ float: left;
+ margin:0.5rem 0 0 0.5rem;
+}
+.s8-items{
+  padding: 0 0.25rem;
+  margin-top:0.4rem;
+}
+.s8-item{
+  padding: 0.2rem 0;
+  border-top: 1px dashed #76bbff;
+}
+.s8-item dt{
+  width: 4.5rem;
+  font-size: 0.26rem;
+  color: rgb( 56, 56, 56 );
+  line-height: 0.5rem;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+}
+.s8-item dd{
+ width: 2.2rem;
+ background: rgb( 118, 187, 255 );
+ font-size: 0.26rem;
+ color: rgb( 255, 255, 255 );
+ line-height: 0.5rem;
+ border-radius: 0.25rem;
+ text-align: center;
+ float: right;
+}
+.s9-items{
+  padding: 0 0.5rem;
+}
+.s9-item{
+  margin-top:0.5rem;
+}
+.s9-item h3{
+  font-size: 0.3rem;
+  color: rgb( 56, 56, 56 );
+  line-height: 0.6rem;
+  background: url(../images/yd_21.png) no-repeat left bottom;
+  background-size: 1.85rem;
+}
+.s9-item p{
+  font-size: 0.26rem;
+  color: rgb( 104, 103, 103 );
+  line-height: 0.75rem;
+}
+.s10-time{
+  text-align: center;
+  font-size: 0;
+  margin-top:0.6rem;
+}
+.s10-time span{
+  display: inline-block;
+  width: 2.12rem;
+  height: 2.22rem;
+  font-size: 1rem;
+  color: rgb( 56, 56, 56 );
+  text-align: center;
+  padding-top: 0.8rem;
+}
+.s10-time .month{
+  background: url(../images/yd_23.png) no-repeat center;
+  background-size: contain;
+}
+.s10-time .date{
+  background: url(../images/yd_24.png) no-repeat center;
+  background-size: contain;
+  margin-left: 1.0rem;
+}
+.s10-txt{
+  font-size: 0.24rem;
+  color: rgb( 56, 56, 56 );
+  line-height: 0.4rem;
+  padding:0 1.1rem;
+  margin-top:0.3rem;
+}
+.copyright{
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
+/*底部滚动信息*/
+.fot-scroll {
+  width: 7.5rem;
+  padding: 0 0.15rem;
+  background:#ccc;
+  height: 50px;
+  position: fixed;
+  left: 50%;
+  margin-left: -3.75rem;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+#fot-info{
+ height:50px;
+ overflow:hidden;
+}
+#fot-info a{
+ display:block;/*这个属性是必须的*/
+ font-size:14px;
+ line-height:50px;
+ color:#000;
+ width: 5.2rem;
+ letter-spacing: 3px;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+.fot-btn {
+  width: 2.0rem;
+  border-radius: 5px;
+  background: #76bbff;
+  font-size: 14px;
+  color: rgb( 255, 255, 255 );
+  line-height: 35px;
+  text-align: center;
+  margin-top: 8px;
+  letter-spacing: 2px;
+}
+/*底部滚动信息*/
