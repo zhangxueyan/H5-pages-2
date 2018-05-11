@@ -50,7 +50,7 @@
          }
         })
         var $banTab = $(".ban-tab");
-        $banTab.mouseenter(function(){
+        $banTab.click(function(){
           var $curItem = $(this);
           var idx= $curItem.index()
           $banTab.removeClass("active")

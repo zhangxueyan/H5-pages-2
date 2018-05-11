@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta charset="utf-8">
+<title>学历教育-名校大专/本科学历</title>
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="./css/reset.css">
+<link rel="stylesheet" type="text/css" href="./css/css.css">
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<!-- <script type="text/javascript"  src="js/basic.js"></script> -->
+</head>
+<style>
+  /*循环弹窗*/
+.popup{
+  width: 6rem;
+  background: #fff;
+  border: 2px solid #00a0e9;
+  border-radius: 0.1rem;
+  padding: 0.3rem;
+  position: fixed; 
+  left: 50%;
+  margin-left: -3rem;
+  top:50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 3000;
+  display: none;
+}
+.popup-close{
+  width:0.6rem;
+  height: 0.6rem;
+  background: url(img/new/close.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  right: -0.2rem;
+  top: -0.2rem;
+}
+.pop-iframe{
+  height: 50px;
+}
+.pop-txt{
+  font-size: 0.26rem;
+  color: rgb( 0, 160, 233 );
+  line-height: 0.4rem;
+  margin-top: 0.2rem;
+}
+.pop-mask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  display: none;
+}
+/*循环弹窗*/
+</style>
+<body>
+
+ <!-- 循环弹窗 -->
+    <div class="popups">
+      <div class="popup">
+        <div class="pop-iframe">
+          <iframe width="100%" height="100%" frameborder="0" scrolling="no" src="http://chat.talk99.cn/chat/form?c=10039888&conf=11217"></iframe>
+        </div>
+        <p class="pop-txt">我们将立刻回电。该通话对您免费，请放心接听!</p>
+        <span class="popup-close"></span>
+      </div>
+      <div class="pop-mask"></div>
+    </div>
+ <!-- 循环弹窗 -->
+
+
+
+<!--nav-->
+<!-- <div class="container-fluid">
+    <nav>
+        <ul class="clearFix">
+            <li><a href="javascript:;return false;" >考证时长</a></li>
+            <li><a href="javascript:;return false;" >咨询本科</a></li>
+            <li><a href="javascript:;return false;" >咨询专业</a></li>
+            <li class="LI_R"><a href="javascript:;return false;" >考证条件</a></li>
+        </ul>
+    </nav>
+</div> -->
+<div class="container-fluid">
+  <div class="row" style="display: none;">
+    <img src="img/logo.jpg" alt="" class="img-responsive">
+  </div>
+</div>
+<div class="tanks tanks_index"></div>
+<div class="tanks">
+<div class="container-fluid">
+	<div class="row">
+        <section class="banner" onclick="doyoo.util.openChat('g=10039888');return false;">
+           <div class="bd">
+           		<ul>
+                	<!--<li>
+                    	<a href="javascript:;return false;" ><img src="images/activity2.jpg" alt="" class="img-fluid"></a>
+                    </li>-->
+                    <li>
+                    	<a href="javascript:;"><img src="img/banner.jpg" alt="" class="img-fluid"></a>
+                    </li>
+                </ul>
+           </div>
+        </section>
+    </div>
+</div>
+
+
+<div class="container xiuben">
+    <h2 class="text-center">修专科/本科学历<br/><span>报考不限基础</span></h2>
+    <div class="col-sm-12 col-xs-12">
+      <div class="row" onclick="doyoo.util.openChat('g=10039888');return false;">
+        <div class="col-sm-4 col-xs-4 xiuben1">
+          <a href="javascript:;return false;" >
+            <img src="img/biye1.png" alt="" class="img-responsive">
+            <p class="text-center">免试入学</p>
+          </a>
+        </div>
+        <div class="col-sm-4 col-xs-4 xiuben1">
+          <a href="javascript:;return false;" >
+            <img src="img/biye2.png" alt="" class="img-responsive">
+            <p class="text-center">全程托管</p>
+          </a>
+        </div>
+        <div class="col-sm-4 col-xs-4 xiuben1">
+          <a href="javascript:;return false;" >
+            <img src="img/biye3.png" alt="" class="img-responsive">
+            <p class="text-center">学信网可查</p>
+          </a>
+        </div>
+        <div class="col-sm-4 col-xs-4 xiuben1">
+          <a href="javascript:;return false;" >
+            <img src="img/biye4.png" alt="" class="img-responsive">
+            <p class="text-center">1.5年毕业</p>
+          </a>
+        </div>
+        <div class="col-sm-4 col-xs-4 xiuben1">
+          <a href="javascript:;return false;" >
+            <img src="img/biye5.png" alt="" class="img-responsive">
+            <p class="text-center">政策性免考</p>
+          </a>
+        </div>
+        <div class="col-sm-4 col-xs-4 xiuben1">
+          <a href="javascript:;return false;" >
+            <img src="img/biye6.png" alt="" class="img-responsive">
+            <p class="text-center">一考双证</p>
+          </a>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container anniu" onclick="doyoo.util.openChat('g=10039888');return false;">
+  <a href="javascript:;">
+    <p>报考条件咨询</p>
+    <img src="img/jiantou.png" alt="" class="img-responsive">
+  </a>
+</div>
+
+<div class="container-fluid con_hbj">
+  <div class="row">
+    <div class="container" onclick="doyoo.util.openChat('g=10039888');return false;">
+       <div class="col-sm-12 col-xs-12 fangshi1"><h2 class="text-center">考取正规学历<span>4种方式</span></h2></div>
+       <div class="col-sm-12 col-xs-12">
+          <div class="row">
+            <div class="col-sm-6 col-xs-6 pull-left">
+              <div class="row">
+                <div class="col-sm-12 col-xs-12 fangshi">
+                  <div class="row">
+                    <div class="fangshi_t"></div>
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="zi"><p>自</p></div>
+                      <h2 class="text-center">自考考试<br/><span>（专/本）</span></h2>
+                      <div class="miaosu">
+                        <p>◆ 学习时间短</p>
+                        <p>◆ 收费低廉</p>
+                        <p>◆ 可申请学位</p>
+                      </div>
+                      <a href="javascript:;return false;" >
+                        <p>自考咨询入口</p>
+                        <img src="img/jiantou.png" alt="" class="img-responsive">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-6 pull-left">
+              <div class="row">
+                <div class="col-sm-12 col-xs-12 fangshi fangshi_cheng">
+                  <div class="row">
+                    <div class="fangshi_t"></div>
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="zi"><p>成</p></div>
+                      <h2 class="text-center">成人高考<br/><span>（专/本）</span></h2>
+                      <div class="miaosu">
+                        <p>◆ 入学门槛低</p>
+                        <p>◆ 业余学习即可</p>
+                        <p>◆ 可申请学位</p>
+                      </div>
+                      <a href="javascript:;return false;" >
+                        <p>成考咨询入口</p>
+                        <img src="img/jiantou.png" alt="" class="img-responsive">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col-sm-6 col-xs-6 pull-left">
+              <div class="row">
+              <div class="col-sm-12 col-xs-12 fangshi fangshi_yuan">
+                <div class="row">
+                  <div class="fangshi_t"></div>
+                  <div class="col-sm-12 col-xs-12">
+                    <div class="zi"><p>远</p></div>
+                    <h2 class="text-center">远程教育<br/><span>（专/本）</span></h2>
+                    <div class="miaosu">
+                      <p>◆ 重点院校</p>
+                      <p>◆ 专业网络学习</p>
+                      <p>◆ 可申请学位</p>
+                    </div>
+                    <a href="javascript:;return false;" >
+                      <p>远程咨询入口</p>
+                      <img src="img/jiantou.png" alt="" class="img-responsive">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>    
+            <div class="col-sm-6 col-xs-6 pull-left">
+              <div class="row">
+                <div class="col-sm-12 col-xs-12 fangshi fangshi_dian">
+                  <div class="row">
+                    <div class="fangshi_t"></div>
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="zi"><p>电</p></div>
+                      <h2 class="text-center">电大学历<br/><span>（专/本）</span></h2>
+                      <div class="miaosu">
+                        <p>◆ 无学习压力</p>
+                        <p>◆ 学习形式灵活</p>
+                        <p>◆ 社会认可</p>
+                      </div>
+                      <a href="javascript:;return false;" >
+                        <p>电大咨询入口</p>
+                        <img src="img/jiantou.png" alt="" class="img-responsive">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container" onclick="doyoo.util.openChat('g=10039888');return false;">
+      <div class="col-sm-12 col-xs-12 fangshi1"><h2 class="text-center">重点院校<span>211/985名校</span></h2></div>
+      <div class="col-sm-12 col-xs-12">
+          <div class="row">
+            <div class="col-sm-6 col-xs-6">
+              <div class="row">
+                <div class="col-sm-12 col-xs-12 school pull-left">
+                  <div class="row">
+                    <div class="school_t"><img src="img/new/sc01.jpg" alt="" class="img-responsive"></div>
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="sc"><p>上海大学</p></div>
+                      <div class="miaosu">
+                        <p>2018年录取：300人</p>
+                        <p>剩余名额：167人</p>
+                      </div>
+                      <a href="javascript:;return false;" >
+                        <p>录取条件咨询</p>
+                        <img src="img/jiantou.png" alt="" class="img-responsive">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-6">
+              <div class="row">
+                <div class="col-sm-12 col-xs-12 school pull-right">
+                  <div class="row">
+                    <div class="school_t"><img src="img/new/sc02.jpg" alt="" class="img-responsive"></div>
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="sc"><p>上海师范大学</p></div>
+                      <div class="miaosu">
+                        <p>2018年录取：300人</p>
+                        <p>剩余名额：152人</p>
+                      </div>
+                      <a href="javascript:;return false;" >
+                        <p>录取条件咨询</p>
+                        <img src="img/jiantou.png" alt="" class="img-responsive">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-6">
+              <div class="row">
+                <div class="col-sm-12 col-xs-12 school pull-left">
+                  <div class="row">
+                    <div class="school_t"><img src="img/new/sc03.jpg" alt="" class="img-responsive"></div>
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="sc"><p>上海财经大学</p></div>
+                      <div class="miaosu">
+                        <p>2018年录取：300人</p>
+                        <p>剩余名额：100人</p>
+                      </div>
+                      <a href="javascript:;return false;" >
+                        <p>录取条件咨询</p>
+                        <img src="img/jiantou.png" alt="" class="img-responsive">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-6">
+              <div class="row">
+                <div class="col-sm-12 col-xs-12 school pull-right">
+                  <div class="row">
+                    <div class="school_t"><img src="img/new/sc04.jpg" alt="" class="img-responsive"></div>
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="sc"><p>电子科技大学</p></div>
+                      <div class="miaosu">
+                        <p>2018年录取：300人</p>
+                        <p>剩余名额：104人</p>
+                      </div>
+                      <a href="javascript:;return false;" >
+                        <p>录取条件咨询</p>
+                        <img src="img/jiantou.png" alt="" class="img-responsive">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-6">
+              <div class="row">
+                <div class="col-sm-12 col-xs-12 school pull-left">
+                  <div class="row">
+                    <div class="school_t"><img src="img/new/sc05.jpg" alt="" class="img-responsive"></div>
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="sc"><p>复旦大学</p></div>
+                      <div class="miaosu">
+                        <p>2018年录取：300人</p>
+                        <p>剩余名额：97人</p>
+                      </div>
+                      <a href="javascript:;return false;" >
+                        <p>录取条件咨询</p>
+                        <img src="img/jiantou.png" alt="" class="img-responsive">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-6">
+              <div class="row">
+                <div class="col-sm-12 col-xs-12 school pull-right">
+                  <div class="row">
+                    <div class="school_t"><img src="img/new/sc06.jpg" alt="" class="img-responsive"></div>
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="sc"><p>华东政法大学</p></div>
+                      <div class="miaosu">
+                        <p>2018年录取：400人</p>
+                        <p>剩余名额：193人</p>
+                      </div>
+                      <a href="javascript:;return false;" >
+                        <p>录取条件咨询</p>
+                        <img src="img/jiantou.png" alt="" class="img-responsive">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-6">
+              <div class="row">
+                <div class="col-sm-12 col-xs-12 school pull-left">
+                  <div class="row">
+                    <div class="school_t"><img src="img/new/sc07.jpg" alt="" class="img-responsive"></div>
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="sc"><p>交通大学</p></div>
+                      <div class="miaosu">
+                        <p>2018年录取：280人</p>
+                        <p>剩余名额：84人</p>
+                      </div>
+                      <a href="javascript:;return false;" >
+                        <p>录取条件咨询</p>
+                        <img src="img/jiantou.png" alt="" class="img-responsive">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-6">
+              <div class="row">
+                <div class="col-sm-12 col-xs-12 school pull-right">
+                  <div class="row">
+                    <div class="school_t"><img src="img/new/sc08.jpg" alt="" class="img-responsive"></div>
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="sc"><p>同济大学</p></div>
+                      <div class="miaosu">
+                        <p>2018年录取：350人</p>
+                        <p>剩余名额：125人</p>
+                      </div>
+                      <a href="javascript:;return false;" >
+                        <p>录取条件咨询</p>
+                        <img src="img/jiantou.png" alt="" class="img-responsive">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+
+          </div>
+      </div>
+</div> 
+
+<div class="container anniu" onclick="doyoo.util.openChat('g=10039888');return false;">
+  <a href="javascript:;return false;" >
+    <p>更多院校招生情况</p>
+    <img src="img/jiantou.png" alt="" class="img-responsive">
+  </a>
+</div>
+<div class="container anniu" onclick="doyoo.util.openChat('g=10039888');return false;">
+  <a href="javascript:;return false;" >
+    <p>点击问问学历老师</p>
+    <img src="img/jiantou.png" alt="" class="img-responsive">
+  </a>
+</div>
+
+
+<div class="container gongzuos" onclick="doyoo.util.openChat('g=10039888');return false;">
+  <div class="col-sm-12 col-xs-12 fangshi1"><h2 class="text-center">96个热门<span>专业推荐<br/>简单、好考、利于工作</span></h2></div>
+  <div class="col-sm-12 col-xs-12">
+    <div class="col-sm-6 col-xs-6 gongzuo pull-left">
+      <div class="row"><h2 class="text-center">经济管理类</h2></div>
+      <div class="gognzuo_p">
+        <p class="text-center">人力资源管理</p>
+        <p class="text-center">行政管理</p>
+        <p class="text-center">会展管理</p>
+        <a href="javascript:;return false;" >了解更多&gt;&gt;</a>
+        <a href="javascript:;return false;"  class="a1">免考科目咨询&gt;&gt;</a>
+      </div>
+    </div>
+     <div class="col-sm-6 col-xs-6 gongzuo pull-right">
+      <div class="row"><h2 class="text-center">建筑工程类</h2></div>
+      <div class="gognzuo_p">
+        <p class="text-center">工程管理</p>
+        <p class="text-center">机械自动化</p>
+        <p class="text-center">室内设计</p>
+        <a href="javascript:;return false;" >了解更多&gt;&gt;</a>
+        <a href="javascript:;return false;"  class="a1">报考条件咨询&gt;&gt;</a>
+      </div>
+    </div>
+    <div class="col-sm-6 col-xs-6 gongzuo pull-left">
+      <div class="row"><h2 class="text-center">语言法律类</h2></div>
+      <div class="gognzuo_p">
+        <p class="text-center">英语专业</p>
+        <p class="text-center">法律专业</p>
+        <p class="text-center">日语专业</p>
+        <a href="javascript:;return false;" >了解更多&gt;&gt;</a>
+        <a href="javascript:;return false;"  class="a1">本科报名咨询&gt;&gt;</a>
+      </div>
+    </div>
+     <div class="col-sm-6 col-xs-6 gongzuo pull-right">
+      <div class="row"><h2 class="text-center">教育理学类</h2></div>
+      <div class="gognzuo_p">
+        <p class="text-center">学前教育</p>
+        <p class="text-center">小学教育</p>
+        <p class="text-center">商务管理</p>
+        <a href="javascript:;return false;" >了解更多&gt;&gt;</a>
+        <a href="javascript:;return false;"  class="a1">大专报名入口&gt;&gt;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container" onclick="doyoo.util.openChat('g=10039888');return false;">
+  <div class="col-sm-12 col-xs-12 fangshi1"><h2 class="text-center"><span>学历证书，</span><br/>学信网可查 终身有效</h2></div>
+  <div class="col-sm-12 col-xs-12">
+    <div class="row"><img src="img/bj1.jpg" alt="" class="img-responsive bj1"></div>
+  </div>
+</div>
+<div class="container anniu" onclick="doyoo.util.openChat('g=10039888');return false;">
+  <a href="javascript:;return false;" >
+    <p>详情点击咨询</p>
+    <img src="img/jiantou.png" alt="" class="img-responsive">
+  </a>
+</div>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-xs-12 fangshi1"><h2 class="text-center"><span>私人定制，</span><br/>让学历不会成为你的绊脚石</h2></div>
+      <div class="sec3s">
+        <section class="sec5" onclick="doyoo.util.openChat('g=10039888');return false;">
+            <div class="sec5_l">
+                <a href="javascript:;return false;" >
+                <span>1</span>学历太低，有不用考试的吗？</a>
+                <a href="javascript:;return false;" >
+                <span>2</span>多长时间毕业？那种学历省时间</a>
+                <a href="javascript:;return false;" >
+                <span>3</span>考不过怎么办？有简单的专业吗？</a>
+                <a href="javascript:;return false;" >
+                <span>4</span>专升本难吗？在职可以专升本吗？</a>
+                <a href="javascript:;return false;" >
+                <span>5</span>学历需要自己考试吗？怎么简单？</a>
+                <a href="javascript:;return false;" >
+                <span>6</span>含金量如何？社会认可吗？</a>
+                <a href="javascript:;return false;" >
+                <span>7</span>证书可查吗？国家认可吗？</a>
+                <a href="javascript:;return false;" >
+                <span>8</span>毕业时间需要多久？没时间怎么办</a>
+            </div>
+            <div class="sec5_r"><a href="javascript:;return false;" >点击查询</a></div>
+            <div class="sec5_r"><a href="javascript:;return false;" >点击查询</a></div>
+            <div class="sec5_r"><a href="javascript:;return false;" >点击查询</a></div>
+            <div class="sec5_r"><a href="javascript:;return false;" >点击查询</a></div>
+            <div class="sec5_r"><a href="javascript:;return false;" >点击查询</a></div>
+            <div class="sec5_r"><a href="javascript:;return false;" >点击查询</a></div>
+            <div class="sec5_r"><a href="javascript:;return false;" >点击查询</a></div>
+            <div class="sec5_r"><a href="javascript:;return false;" >点击查询</a></div>
+        </section>
+      </div>
+    </div>
+</div>
+<div class="container anniu" onclick="doyoo.util.openChat('g=10039888');return false;">
+  <a href="javascript:;" >
+    <p>详情点击咨询</p>
+    <img src="img/jiantou.png" alt="" class="img-responsive">
+  </a>
+</div>
+
+
+
+<div class="container-fluid">
+   <img src="img/bj2.jpg" alt="" class="img-responsive bj1">
+</div>
+<div class="container anniu" onclick="doyoo.util.openChat('g=10039888');return false;">
+  <a href="javascript:;" >
+    <p>点击咨询</p>
+    <img src="img/jiantou.png" alt="" class="img-responsive">
+  </a>
+</div>
+
+
+<div class="container-fluid" onclick="doyoo.util.openChat('g=10039888');return false;">
+   <div class="col-sm-12 col-xs-12 fangshi1"><h2 class="text-center">学历提升<span>就是这么简单</span></h2></div>
+   <div class="col-sm-12 col-xs-12"><div class="row"><img src="img/bj3.jpg" alt="" class="img-responsive bj1"></div></div>
+</div>
+<div class="container anniu" onclick="doyoo.util.openChat('g=10039888');return false;">
+  <a href="javascript:;" >
+    <p>更多详情点击咨询</p>
+    <img src="img/jiantou.png" alt="" class="img-responsive">
+  </a>
+</div>
+
+<!-- <div class="container-fluid" onclick="doyoo.util.openChat('g=10039888');return false;">
+   <div class="row"><img src="img/biaoti.jpg" alt="" class="img-responsive bj1"></div>
+</div> -->
+
+
+<div class="container" style="display: none;">
+   <div class="col-sm-12 col-xs-12 bian">
+     <div class="img"><img src="img/denglv.png" alt="" class="img-responsive"></div>
+     <input type="hidden" id="www2" value="http://www.bjbjiaoyu.com/bd01yd3/第一个注册">
+     <input type="text" name="username" id="username" onblur="if(this.value=='')this.value='姓名'" value="姓名" onfocus="this.value=''">
+   </div>
+   <div class="col-sm-12 col-xs-12 bian">
+     <div class="img"><img src="img/shouji.png" alt="" class="img-responsive"></div>
+     <input type="text" name="telephone2" id="telephone2" onblur="if(this.value=='')this.value='手机'" value="手机" onfocus="this.value=''">
+   </div>
+   <div class="col-sm-12 col-xs-12 bian1">
+     <div class="row">
+       <p><span>注：</span>您可以先领取红包，咨询我们学历老师报名详情</p>
+     </div>
+   </div>
+</div>
+<div class="container anniu" style="display: none;">
+  <a onclick="dianji2()">
+    <p>提 交</p>
+    <img src="img/jiantou.png" alt="" class="img-responsive">
+  </a>
+</div>
+
+
+
+
+<div class="container">
+ <div class="col-sm-12 col-xs-12 fangshi1"><h2 class="text-center"><span>测一测</span>如何拿本科学历</h2></div>
+</div>
+<div class="container-fluid con1a" style="display: none;">
+   <div class="row">
+      <div class="con1_c">
+        <ul>
+              <li>
+                  <p>您目前的学历水平是？</p>
+                    <div>
+                      <label><span><input type="radio" value="初中及以下" id="education" name="education"></span>初中及以下</label>
+                        <label><span><input type="radio" value="高中学历" id="education" name="education"></span>高中学历</label>
+                        <label><span><input type="radio" value="专科学历" id="education" name="education"></span>专科学历</label>
+                        <label><span><input type="radio" value="其他学历" id="education" name="education"></span>其他学历</label>
+                    </div>
+                </li>
+                <!-- <li>
+                  <p>2、您目前的年龄段是？</p>
+                    <div>
+                      <label><span><input type="radio" value="18-23岁" id="t_time" name="t_time"></span>18-23岁</label>
+                        <label><span><input type="radio" value="24-30岁" id="t_time" name="t_time"></span>24-30岁</label>
+                        <label><span><input type="radio" value="31-40岁" id="t_time" name="t_time"></span>31-40岁</label>
+                        <label><span><input type="radio" value="40岁以上" id="t_time" name="t_time"></span>40岁以上</label>
+                    </div>
+                </li> -->
+                <li>
+                  <p>您期望多久能毕业？</p>
+                    <div>
+                      <label><span><input type="radio" value="0.5-1年" id="way" name="way"></span>0.5-1年</label>
+                        <label><span><input type="radio" value="1-1.5年" id="way" name="way"></span>1-1.5年</label>
+                        <label><span><input type="radio" value="1.5-2年" id="way" name="way"></span>1.5-2年</label>
+                    </div>
+                </li>
+                <li>
+                  <p>您意向哪种学习方式？</p>
+                    <div>
+                      <label><span><input type="radio" value="在家自学" id="way" name="way"></span>在家自学</label>
+                        <label><span><input type="radio" value="远程网教" id="way" name="way"></span>远程网教</label>
+                        <label><span><input type="radio" value="托管免考" id="way" name="way"></span>托管免考</label>
+                        <label><span><input type="radio" value="学校上课" id="way" name="way"></span>学校上课</label>
+                    </div>
+                </li>
+                <!-- <li>
+                  <p>您希望学费减免多少合适？</p>
+                    <div>
+                  
+                      <label><span><input type="radio" value="0元入学" id="reminder" name="reminder"></span>0元入学</label>
+                        <label><span><input type="radio" value="500" id="reminder" name="reminder"></span>500</label>
+                        <label><span><input type="radio" value="500-1000" id="reminder" name="reminder"></span>500-1000</label>
+                    </div>
+                </li> -->
+            </ul>
+              <input type="hidden" id="www" value="http://www.bjbjiaoyu.com/bd01yd3/第一个注册">
+            <p class="text-left ce1">您的联系方式（用于接收测评结果）<span>*</span></p>
+            
+            <div class="tijiao">
+              <input type="text" name="telephone" id="telephone" onblur="if(this.value=='')this.value='请输入您的手机号'" value="请输入您的手机号" onfocus="this.value=''">
+                <button type="button" onclick="dianji1()">提交获取测评结果</button>
+            </div>
+        </div>
+   </div>
+</div>
+
+<div class="iframe2">
+  <iframe width="100%" height="100%" frameborder="0" scrolling="no" src="http://chat.talk99.cn/chat/form?c=10039888&conf=11216"></iframe>
+</div>
+
+
+
+
+<!--<section class="u-arrow">
+    <p class="css_sprite01"></p>
+</section>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <section class="AD2" onclick="doyoo.util.openChat('g=10039888');return false;">
+            <a href="javascript:;return false;" ><img src="img/zixun.jpg" alt="" class="img-fluid"></a>
+        </section>
+    </div>
+</div>
+
+
+
+<!-- <div class="container-fluid">
+    <div class="row">
+      <section class="foot_gu">
+      	<a href="javascript:;return false;" >在线咨询<span>|</span></a>
+        <a href="javascript:;return false;" >免费资料<span>|</span></a>
+        <a class="main">抢占名额</a>
+      </section>
+    </div>
+</div> -->
+<!-- <div class="zg_dibu_box"> 
+    <p><a id="tqchat56" href="javascript:;return false;"  class="zg_dibu_box_lin1" style="cursor: pointer;"> <img src="img/m5_1.jpg" width="41%"> <span>免费试听</span> </a>
+    <a id="tqchat56" href="javascript:;return false;"  class="zg_dibu_box_lin1" style="cursor: pointer;"> <img src="img/m5_4.jpg" width="41%"> <span>热门专业</span> </a>
+     <a id="tqchat57" class="zg_dibu_box_lin1 main" style="cursor: pointer;"> <img src="img/m5_2.jpg" width="41%"> <span>抢占名额</span> </a>
+      </p>
+</div>
+
+
+
+<div class="tank">
+    <h2>抢占报专科送本科名额</h2>
+    <div class="tank_t">
+         <input type="hidden" id="www5" value="http://www.bjbjiaoyu.com/bd01yd3/第五个注册">
+        <input type="text" class="white_btn" name="telephone5" id="telephone5" value="请输入您的手机号码" onfocus="this.value=''" onblur="if(this.value==''){this.value='接受信息手机号码'}">
+        <button type="button" onclick="dianji5()">立即抢占名额</button>
+    </div>
+    <div class="close"><img src="img/close.jpg" class="img_fulid"></div>
+</div> -->
+
+</div>
+<div class="row">
+         <p style="color: #000; height:.6rem; line-height: .6rem; margin-bottom:65px; text-align:center;font-size:16px;">北京文博华茂科技有限公司</p>
+    </div>
+
+
+
+<script>   
+function dianji1(){
+    var phone= $("#telephone").val();
+    var www= $("#www").val();
+      var url = window.location.href;
+    if(phone==""){
+        alert('手机号不能为空!!')
+    }else{
+           var re = /^1[3,5,8,7]\d{9}$/;
+         if(!re.test(phone)){
+            alert('手机号格式不正确!!')
+         }else{
+                 $.ajax({
+                  url:"http://www.bjbjiaoyu.com/xiagnmu/index.php/Home/Index/form1",
+                  type:"get",
+                  data:{
+                    phone:phone,
+                    www:www,
+                    url:url
+                  },
+                  success:function(msg){
+                        if(msg==1){
+                        
+                            alert('提交成功!!')  
+                       
+                        }else if(msg==2){
+                            
+                            alert('您提交的手机已存在!!')  
+                             
+                        }else{
+                           
+                             alert('提交失败!!')  
+                                  
+                        }
+                    }   
+                 
+                  })
+             }
+
+    }
+} 
+function dianji2(){
+    var phone= $("#telephone2").val();
+    var www= $("#www2").val();
+    var username=$("#username").val();
+    var url = window.location.href;
+    if(phone==""){
+        alert('手机号不能为空!!')
+    }else{
+           var re = /^1[3,5,8,7]\d{9}$/;
+         if(!re.test(phone)){
+            alert('手机号格式不正确!!')
+         }else{
+                 $.ajax({
+                  url:"http://www.bjbjiaoyu.com/xiagnmu/index.php/Home/Index/form1",
+                  type:"get",
+                  data:{
+                    phone:phone,
+                    www:www,
+                    url:url,
+                    username:username
+                  },
+                  success:function(msg){
+                        if(msg==1){
+                        
+                            alert('提交成功!!')  
+                       
+                        }else if(msg==2){
+                            
+                            alert('您提交的手机已存在!!')  
+                             
+                        }else{
+                           
+                             alert('提交失败!!')  
+                                  
+                        }
+                    }   
+                 
+                  })
+             }
+
+    }
+} 
+
+// function dianji5(){
+//     var phone= $("#telephone5").val();
+//     var www= $("#www5").val();
+//       var url = window.location.href;
+//     if(phone==""){
+//         alert('手机号不能为空!!')
+//     }else{
+//            var re = /^1[3,5,8,7]\d{9}$/;
+//          if(!re.test(phone)){
+//             alert('手机号格式不正确!!')
+//          }else{
+//                  $.ajax({
+//                   url:"http://www.bjbjiaoyu.com/xiagnmu/index.php/Home/Index/form1",
+//                   type:"get",
+//                   data:{
+//                     phone:phone,
+//                     www:www,
+//                     url:url
+//                   },
+//                   success:function(msg){
+//                         if(msg==1){
+                        
+//                             alert('提交成功!!')  
+                       
+//                         }else if(msg==2){
+                            
+//                             alert('您提交的手机已存在!!')  
+                             
+//                         }else{
+                           
+//                              alert('提交失败!!')  
+                                  
+//                         }
+//                     }   
+                 
+//                   })
+//              }
+
+//     }
+// } 
+
+</script>
+
+<script>
+    (function(win,doc){
+        win.addEventListener('resize',setFont,false);
+        setFont();
+        function setFont(){
+            doc.documentElement.style.fontSize=doc.documentElement.clientWidth/6.4+'px';
+        };
+    })(window,document);
+</script>
+<!-- <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script> -->
+<!-- <script type="text/javascript" src="js/js.js"></script> -->
+<!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+<script type="text/javascript" src="http://lead.soperson.com/10039888/10065757.js"></script>
+
+</body>
+</html>
