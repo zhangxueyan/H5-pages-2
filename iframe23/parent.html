@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>  
+<html lang="en" id="bd">  
+<head>  
+    <meta charset="UTF-8">  
+    <script src="js/jquery-1.10.2.min.js"></script> 
+    <title>Document</title>
+    <style>
+    .childIframe{
+      height: 200px;
+      border: 2px solid blue;
+    }
+    </style>
+</head>  
+<body> 
+    <div class="childIframe">
+     <iframe src="child.html" frameborder="1"></iframe>
+    </div>
+    
+
+    <div class="childIframe">
+      <iframe src="child.html" frameborder="1"></iframe>
+    </div>
+
+    <script>
+     function func(){
+      console.log("提交成功")
+     }
+
+    </script>
+</body>  
+</html> 
