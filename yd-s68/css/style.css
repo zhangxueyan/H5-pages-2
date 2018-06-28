@@ -1,0 +1,43 @@
+﻿@charset 'UTF-8';
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+body{
+  width:7.5rem;
+  margin:0 auto;
+}
+.s-titl{
+  background:rgba(121,190,189,0.2);
+  font-size: 0.36rem;
+  text-align: center;
+  color: #61a5a4;
+  font-weight: bold;
+  line-height: 1.2rem;
+}
+.s2-iframe{
+  width:7rem;
+  margin:0 auto;
+  height: 390px;
+}
+.s3-iframe{
+  width:7rem;
+  margin:0 auto;
+  height: 210px;
+}
+.s-note{
+  font-size: 0.24rem;
+  color: rgb( 137, 137, 137 );
+  text-align: center;
+  color: #000;
+}
+.s-note span{
+  color:red;
+}
+.copyright{
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  padding: 10px 0;
+}

@@ -1,0 +1,826 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>成人学历提升</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/mk.css">
+<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/basic.js"></script>
+<style>
+.copyright{
+	line-height: 50px;
+	text-align: center; 
+	color: #808080;
+	background: url(images/bg_06.png) repeat;
+}
+.swiper-container1{
+  width:100%;
+  height: 650px;
+}
+.swiper-container1 .swiper-slide{
+	width: 100%;
+ height: 100%;
+}
+.swiper-container1 .swiper-slide1{
+	background: url(images/banner01.jpg) no-repeat center;
+}
+.swiper-container1 .swiper-slide2{
+	background: url(images/banner04.jpg) no-repeat center;
+}
+.swiper-pagination-bullet{
+    width: 16px;
+    height: 16px;
+}
+.swiper-pagination-bullet-active{
+   background: yellow;
+}
+/*循环弹窗 start*/
+.popup{
+  width: 500px;
+  height: 362px;
+  position: fixed;
+  left: 50%;
+  margin-left: -250px;
+  top: 50%;
+  margin-top: -181px;
+  cursor: pointer;
+  z-index: 9999;
+  display: none;
+}
+.pop-close{
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    position: absolute;
+    cursor: pointer;
+    right: 5px;
+    top: 0;
+}
+/*循环弹窗 ending*/
+.ban-btns{
+	width: 1000px;
+	height: 40px;
+	position: absolute;
+	left: 50%;
+	margin-left: -500px;
+	bottom:40px;
+	z-index: 10;
+	text-align: center;
+}
+.ban-btn{
+	width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    margin:0 10px;
+}
+.ban-btn1{
+	background: #fff100;
+	    color: #000;
+}
+.ban-btn2{
+	background: #0eb468;
+	    color: #fff;
+}
+.ban-btn1:hover{
+background: #fff;
+color: #000;
+}
+.ban-btn2:hover{
+	background: #fff;
+	color: #0eb468;
+}
+.swiper-container1 .swiper-button{
+	width:30px;
+	height: 100px;
+	top:-300px;
+	opacity:0.3;
+}
+.swiper-container1 .swiper-button-prev{
+	background: url(images/banner_ctrl.png) no-repeat left center;
+} 
+.swiper-container1 .swiper-button-next{
+	background: url(images/banner_ctrl.png) no-repeat right center;
+} 
+</style>
+<!--Top-->
+
+<!-- 左右悬浮 -->
+<div style="position: fixed; top:150px;width:130px; right:0; cursor: pointer; z-index: 1000;" onclick="doyoo.util.openChat('g=10039888');return false;">
+	<img src="./images/right.png" width="130px">	
+</div>
+<div style="position: fixed; top:150px;width:130px; left:0; cursor: pointer; z-index: 1000;" onclick="doyoo.util.openChat('g=10039888');return false;">
+	<img src="./images/left.png" width="130px">	
+</div>
+<!-- 循环弹窗 start -->
+<div class="popup">
+     <div class="pop-txt" onclick="doyoo.util.openChat('g=10039888');return false;">
+       <img src="images/popup.png" alt="">
+     </div>
+     <span class="pop-close">关闭</span>
+</div>
+<!-- 循环弹窗 ending -->
+
+
+<!--导航开始-->
+<div class="dhbg">
+	<div class="dhnr">
+    	<div class="nav2" onclick="doyoo.util.openChat('g=10039888');return false;">
+			<div class="inner">
+				<ul class="navUl">
+					<li class="navli lino1"><a href="javascript:;">自考院校</a>
+						<div class="slideDown" style="display: none;">
+							<ul style="cursor: pointer;">
+								<li><a href="javascript:;">复旦大学</a></li>
+								<li><a href="javascript:;">同济大学</a></li>
+								<li><a href="javascript:;">华东理工大学</a></li>
+								<li><a href="javascript:;">开放大学</a></li>    
+								<li><a href="javascript:;">其他知名院校</a></li>
+							</ul>
+						</div>
+					</li> 
+					<li class="navli lino2"><a href="javascript:;">热门专业推荐</a>
+						<div class="slideDown" style="display: none;">
+    						<ul style="cursor: pointer;">
+								<li><a href="javascript:;">经济管理类</a></li>
+     						 	<li><a href="javascript:;">计算机类</a></li>
+								<li><a href="javascript:;">建筑工程类</a></li>
+								<li><a href="javascript:;">语言法律类</a></li>
+								<li><a href="javascript:;">机械工程类</a></li>
+								<li><a href="javascript:;">教育类专业</a></li>
+    						</ul>
+    					</div>
+					</li>
+					<li class="navli lino3"><a href="javascript:;">学费与收费</a>
+    					<div class="slideDown" style="display: none;">
+    						<ul style="cursor: pointer;">
+								<li><a href="javascript:;">院校专业学费</a></li>
+      							<li><a href="javascript:;">考试费缴纳</a></li>
+    						</ul>
+    					</div>
+					</li>
+					<li class="navli lino4"><a href="javascript:;">申请细则</a>
+    					<div class="slideDown" style="display: none;">
+    						<ul style="cursor: pointer;">
+								
+    						</ul>
+    					</div>
+    				</li>
+					<li class="navli lino5"><a href="javascript:;">学历认证</a>
+    					<div class="slideDown" style="display: none;">
+    						<ul style="cursor: pointer;">
+								<li><a href="javascript:;">高中学历验证</a></li>
+								<li><a href="javascript:;">大专学历验证</a></li>
+								<li><a href="javascript:;">本科学历验证</a></li>
+								<li><a href="javascript:;">学历证明开具</a></li>
+    						</ul>
+    					</div>
+    				</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--导航结束-->
+ <div class="banner">
+   <div class="swiper-container swiper-container1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper-slide1"></div>
+      <div class="swiper-slide swiper-slide2"></div>
+    </div>
+     <div class="ban-btns">
+     	<div class="swiper-button-prev swiper-button"></div>
+        <div class="swiper-button-next swiper-button"></div>
+     	<a href="javascript:;" class="ban-btn ban-btn1" onclick="doyoo.util.openChat('g=10039888');return false;">了解如何报名</a>
+     	<a href="javascript:;" class="ban-btn ban-btn2" onclick="doyoo.util.openChat('g=10039888');return false;">查询历年通过率</a>
+     </div>
+   </div>
+ </div>
+ <!-- banner ending -->
+
+<div class="jz-con">
+<div class="jz-content">
+    <div class="jz-left">
+        <div class="jz-button">重要通知：</div>
+        <div class="jz-title">2018自考成人学历内部补录名额即将截止</div>
+        <div class="jz-line"></div>
+        <p class="jz-tishi">名额有限，错过本次报考将延误半年时间毕业</p>
+        <p class="jz-sy">补录名额仅剩余：</p>
+        <div class="jz-sy-num">
+            <div class="num" id="number">18</div><span>名</span>
+        </div>
+        <p class="jz-tishi1">报考提醒：每年参加考试的考生人数较多，<br> 为避免出现像往期那样因为资料提交不及时，而导致报考出错无法参加考试的情况再次发生 </p>
+        <p class="jz-tishi2">提醒各位考生，一定要争取补录名额，先进行报考备案。</p>
+        <div class="plane"></div>
+    </div>
+    <div class="jz-right">
+        <div class="img-box">
+            <img src="./images/001.png" alt="" style="float: right;">
+        </div>
+        <div class="img-box">
+            <img src="./images/002.png" alt="">
+            <img src="./images/003.png" alt="">
+        </div>
+        <div class="img-box">
+            <img src="./images/004.png" alt="">
+            <img src="./images/005.png" alt="">
+        </div>
+    </div>
+</div>
+</div>
+<!-- 新增分类 -->
+<div class="add1">
+	<div class="add1-mid">
+		<div class="add1-div1" onclick="doyoo.util.openChat('g=10039888');return false;">
+			<h1>热门学历类型：</h1>
+			<ul class="add1-ul1">
+				<li style="cursor:pointer;">自学考试</li>
+				<li style="cursor:pointer;">成人高考</li>
+				<li style="cursor:pointer;">远程教育</li>
+				<li style="cursor:pointer;">广播电大</li>
+				<li style="cursor:pointer;">函授夜大</li>
+				<li style="cursor:pointer;">党校研修</li>
+				<li style="cursor:pointer;">自考专科</li>
+				<li style="cursor:pointer;">自考本科</li>
+			</ul>
+			<div class="add1-more" style="cursor:pointer;"><span>更多</span><span></span></div>
+		</div>
+		<div class="add1-div1 add1-div2" onclick="doyoo.util.openChat('g=10039888');return false;">
+			<h1>报名与考试信息：</h1>
+			<ul class="add1-ul2">
+				<li style="cursor:pointer;">报考条件</li>
+				<li style="cursor:pointer;">报名时间</li>
+				<li style="cursor:pointer;">报名入口</li>
+				<li style="cursor:pointer;">考试时间</li>
+				<li style="cursor:pointer;">减考科目</li>
+				<li style="cursor:pointer;">在职考生</li>
+				<li style="cursor:pointer;">在校考生</li>
+				<li style="cursor:pointer;">考试大纲</li>
+				<li style="cursor:pointer;">历年试题</li>
+				<li style="cursor:pointer;">资料下载</li>
+			</ul>
+			<div class="add1-more" style="cursor:pointer;"><span>更多</span><span></span></div>
+		</div>
+		<div class="add1-div3" onclick="doyoo.util.openChat('g=10039888');return false;">
+			<div class="add1-book" style="background:url( images/1_10.png ) no-repeat center center"></div>
+			<div class="add1-click">
+				<p>在线免费索取：<br> <span style="font-size:16px">《2018年成人学历报考指导说明》</span><br> 一本包罗万象的学历全书</p>
+				<div class="add1-a" style="cursor:pointer;">点击索取</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 新增分类 结束-->
+
+<!--六大提升方案-->
+<div class="mk mk2" style="background: url( images/mk2.jpg ) no-repeat top center">
+	<div class="container">
+		<div class="smalltit">我们定制6大提升方案，全方位覆盖学历提升形式</div>
+		<div class="bigtit">无论你是任何学历，圆你本科梦</div>
+		<div class="content" onclick="doyoo.util.openChat('g=10039888');return false;">
+			<div class="mk2_conleft fl">
+				<dl style="cursor:pointer;">
+					<dt>高中升专科</dt>
+					<dd>高中/中职/中专升大专</dd>
+				</dl>
+				<dl style="cursor:pointer;">
+					<dt>高中升本科</dt>
+					<dd>高中/中专/职中学历升本科学历</dd>
+				</dl>
+				<dl style="cursor:pointer;">
+					<dt>专科升本科</dt>
+					<dd>高职/高专/中专/大专升本科</dd>
+				</dl>
+			</div>
+			<div class="mk2_conmiddle fl"></div>
+			<div class="mk2_conright fl">
+				<dl style="cursor:pointer;">
+					<dt>基础差升专科</dt>
+					<dd>小学/初中升专科</dd>
+				</dl>
+				<dl style="cursor:pointer;">
+					<dt>低门槛升本科</dt>
+					<dd>小学/初中升本科</dd>
+				</dl>
+				<dl style="cursor:pointer;">
+					<dt>修第二学历</dt>
+					<dd>专科/本科修第二学历</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--六大提升方案 结束-->
+
+<!--4大成人学历提升途径-->
+<div class="mk mk3">
+	<div class="container">
+		<div class="title">职场成人学历<span class="yellow_font">认可度排行榜</span></div>
+		<div class="content" onclick="doyoo.util.openChat('g=10039888');return false;">
+			<dl class="fl dl1">
+				<dt><h2>NO.1自考学历</h2><p class="dis">（专/本）</p></dt>
+				<dd>
+					<p class="dis">适合人群：</p>急需正规专科/本科学历，工作忙没 时间上课，要求学位证的人员.
+					<br><br>
+					<p class="dis">考证优势：</p>①社会认可度高<br> ②所需的时间较短
+					<br> ③学费不高
+					<br> ④可申请学位
+					<br><br>
+					<span class="dis">学习方式：</span>网络学习<br>
+					<span class="dis">难度：</span>一般<br>
+					<span class="dis">含金量：</span>很高，媲美统招<br>
+				</dd>
+				<dd>
+					<a class="xs_btn green" style="cursor:pointer;">自考学历咨询入口</a>
+				</dd>
+			</dl>
+			<dl class="fl dl2">
+				<dt><h2>NO.2成人高考</h2><p class="dis">（专/本）</p></dt>
+				<dd>
+					<p class="dis">适合人群：</p>工作比较忙，不急于取得毕业证书,但想轻松获证的在职人员.<br><br>
+					<p class="dis">考证优势：</p>①入学门槛低<br> ②考试简单易通过
+					<br> ③可申请学位
+					<br><br>
+					<span class="dis">学习方式：</span>周末、业余时间学习<br>
+					<span class="dis">难度：</span>一般<br>
+					<span class="dis">含金量：</span>较高，仅限于统招及自考<br>
+				</dd>
+				<dd>
+					<a class="xs_btn green" style="cursor:pointer;">成人高考咨询入口</a>
+				</dd>
+			</dl>
+			<dl class="fl dl3">
+				<dt><h2>NO.3远程学历</h2><p class="dis">（专/本）</p></dt>
+				<dd>
+					<p class="dis">适合人群：</p>工作非常忙，要求学位，上网比较 方便的人员.<br><br>
+					<p class="dis">考证优势：</p>①入学门槛低，毕业率高<br> ②主考院校为知名院校热门专业
+					<br> ③学习时间自由
+					<br>④可申请学位
+					<br><br>
+					<span class="dis">学习方式：</span>网络学习<br>
+					<span class="dis">难度：</span>很低<br>
+					<span class="dis">含金量：</span>一般，社会认可<br><br>
+				</dd>
+				<dd>
+					<a class="xs_btn green" style="cursor:pointer;">远程学历咨询入口</a>
+				</dd>
+			</dl>
+			<dl class="fl dl4">
+				<dt><h2>NO.4函授学历</h2><p class="dis">（专/本）</p></dt>
+				<dd>
+					<p class="dis">适合人群：</p>工作忙，对证书含金量要求不高的人员.<br><br>
+					<p class="dis">考证优势：</p>①轻松考本科<br> ②学习形式灵活
+					<br> ③专业设置实用
+					<br> ④花钱少
+					<br><br>
+					<span class="dis">学习方式：</span>函授、业余<br>
+					<span class="dis">难度：</span>很低<br>
+					<span class="dis">含金量：</span>较低，国家承认<br>
+				</dd>
+				<dd>
+					<a class="xs_btn green" style="cursor:pointer;">函授学历咨询入口</a>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+<!--4大成人学历提升途径 结束-->
+    <div onclick="doyoo.util.openChat('g=10039888');return false;">
+        <img style="cursor: pointer;" src="./images/pic5.png">
+	    <img style="cursor: pointer;" src="./images/pic6.png">
+	    <img style="cursor: pointer;" src="./images/pic7.png">
+    </div>
+<!--院校专业查询中心-->
+<div class="mk mk6">
+	<div class="container">
+		<div class="title tit_spc">院校专业查询中心</div>
+		<div class="discription">
+			囊括当今市场最热门的专业类别，自由选择自己喜爱的专业方向，让理想成为工作。
+		</div>
+		<div class="content" onclick="doyoo.util.openChat('g=10039888');return false;">
+			<table class="tab">
+				<tbody>
+					<tr>
+						<th>经济管理类</th>
+						<th>计算机类 </th>
+						<th>建筑工程系</th>
+						<th>语言法律系</th>
+						<th>教育类</th>
+					</tr>
+					<tr>
+						<td class="tab-active">
+							<a style="cursor:pointer;">人力资源管理 </a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">计算机信息管理</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">工程管理</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">小学教育</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">新闻学</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a style="cursor:pointer;">物流管理</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">室内设计</a>
+						</td>
+						<td class="tab-active">
+							<a style="cursor:pointer;">汉语言文学</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">中英合作商务管理</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">建筑工程</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="tab-active">
+							<a style="cursor:pointer;">金融管理</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">小学教育</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">英语专业</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">采购与供应商管理</a>
+						</td>
+						<td class="tab-active">
+							<a style="cursor:pointer;">计算机应用技术</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<a style="cursor:pointer;">会展管理</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">日语专业</a>
+						</td>
+						<td class="tab-active">
+							<a style="cursor:pointer;">商务管理</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">计算机网络</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">旅游管理</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a style="cursor:pointer;">国际贸易</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">艺术设计</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">学前教育</a>
+						</td>
+						<td class="tab-active"> 
+							<a style="cursor:pointer;">行政管理</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">工商管理</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="tab-active">
+							<a style="cursor:pointer;">会展策划</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">法律专业</a>
+						</td>
+						<td class="tab-active">
+							<a style="cursor:pointer;">会计专业</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">投资理财</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">广告学</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a style="cursor:pointer;">在线试听课程&gt;&gt;</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">在线试听课程&gt;&gt;</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">在线试听课程&gt;&gt;</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">在线试听课程&gt;&gt;</a>
+						</td>
+						<td>
+							<a style="cursor:pointer;">在线试听课程&gt;&gt;</a>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="5" class="tips">温馨提示：部分专业，减考高数、英语、计算机等</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="btn7" style="cursor:pointer;"></div>
+	</div>
+</div>
+<!--院校专业查询中心 结束-->
+
+<!--时间-->
+<div class="&lt;strong&gt;part1&lt;/strong&gt;9">
+  <div class="m1000">
+    <div style="font-size:24px;color:#ff0000; margin-top: -100px;"><span style="color:#333;">【</span>重要信息<span style="color:#333;">】</span></div>
+    <div style="margin-top:30px; background: url( images/tit1.png )  no-repeat top center" class="title">2018年成人学历入学报名补录时间</div>
+
+    <div class="time">
+      <h1 style="font-size:32px;font-weight:bold;">截止日期</h1>
+      <div class="time-div1" style=" background:url( images/161021_15.png ) no-repeat center center "><span class="month" id="month">6</span><span class="day" id="day">26</span></div>
+      <div style="font-size:18px;color:#9a3838;font-weight:bold;">名额有限,错过本次报考将延误毕业时间</div>
+      <div style="cursor: pointer;" class="p19-btn" onclick="doyoo.util.openChat('g=10039888');return false;">预约补录名额&gt;&gt;</div>
+      <div class="remind">
+        <div class="remind-1">报考提醒</div>
+        <div class="remind-2">每年有数万人参加学历考试，为避免区县考位不足、专业名额不足等政策性风险，让考生顺利完成报名，特别提醒，一定在截止日期之前完成学籍注册，进行报考备案。</div>
+      </div>
+    </div>
+    <div style="font-size:16px;padding-bottom:10px;"></div>
+  </div>
+</div>
+
+<div style="background-color:#00b596;"><img style="cursor: pointer;" src="./images/13_01.jpg"></div>
+<div style="background:url(images/bg_05.png;);"><img style="cursor: pointer;" src="./images/13_02.jpg"></div>
+
+<!--学历提升解决方案-->
+<div class="mk mk1">
+	<div class="container">
+		<div class="title" style="background: url( images/tit1.png )  no-repeat top center;">成人学历 4类人群专属学习方案</div>
+		<div class="discription">
+			错过了高考，没法再上大学？想提升学历但没时间、没钱、没精力、学历低？<br>大机构，为你量身定制学历提升方案。一边工作一边考学历，业余时间上大学。 
+		</div>
+		<div class="content" onclick="doyoo.util.openChat('g=10039888');return false;">
+			<dl class="fl">
+				<dt>
+					<b>01</b>
+					<h2>工作忙没时间</h2>
+				</dt>
+				<dd>上班族工作忙，没时间学习？没关系！分校遍布全国，更推出了在线直播课程，无论你是在上下班的路上还是在家里，只要有网络，躺着也能学本科！</dd>
+			</dl>
+			<dl class="fl">
+				<dt>
+					<b style=" padding-right: 10px;">02</b>
+					<h2>急需高含金量正规学历</h2>
+				</dt>
+				<dd>成人学历方式包括自考专本、成考专本、远程专本、函授专本，都是国家承认的正规学历，含金量高，毕业证学信网可查，总有一种适合你。</dd>
+			</dl>
+			<dl class="fl">
+				<dt>
+					<b>03</b>
+					<h2>要好学校也要好专业</h2>
+				</dt>
+				<dd>在好学校学热门专业，才能更好就业。一边工作一边学知识充实自我，业余时间就能取得知名院校正规学历。工作和学习两不误！</dd>
+			</dl>
+			<dl class="fl last">
+				<dt>
+					<b>04</b>
+					<h2>迷茫纠结不满现状</h2>
+				</dt>
+				<dd>想改变现状，却总是因学历被拒之门外，不知道自己以后能做什么想做什么，大机构才能为你提供比较合适的学历方案和能力规划辅导，明天一定比今天好！</dd>
+			</dl>
+		</div>
+		<div class="btn">
+			<a class="yellow" style="cursor:pointer;" onclick="doyoo.util.openChat('g=10039888');return false;">在线了解学历详情</a>
+		</div>
+
+	</div>
+</div>
+
+<!--提升学历-->
+<div class="mk mk4">
+	<div class="container" onclick="doyoo.util.openChat('g=10039888');return false;">
+		<div class="title">无论你是任何职业，都能提升学历</div>
+		<div class="discription">
+			<span class="wihte">证书超高含金量</span>学历国家认可，社会认可度高，学信网终身可查
+		</div>
+		<div class="content">
+			<div class="mk4_con fl">
+				<dl class="fl dl5">
+					<dt><h2>正规学历<br>国家认可</h2></dt>
+					<dd>正规学历，学信网永久查询，全国企事业单位认可度高。</dd>
+					<br>
+					<dd>
+						<a class="btn4 green" style="cursor:pointer;">正规学历咨询</a>
+					</dd>
+				</dl>
+				<dl class="fl dl6">
+					<dt><h2>含金量高<br>等同统招</h2></dt>
+					<dd>
+						学历含金量不逊于统招，国企、外企、合资企业均高度认可，参加公职考试、出国留学的硬文凭。
+					</dd>
+					<dd>
+						<a class="btn4 green" style="cursor:pointer;">学历含金量咨询</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="mk4_con fr">
+				<dl class="fl dl5">
+					<dt><h2>超性价比学费<br>人人都能学</h2></dt>
+					<dd>
+						不管你是职场精英，还是准备就业的新人，千元助学金，还能0首付0利息分期。
+					</dd>
+					<dd>
+						<a class="btn4 green" style="cursor:pointer;">助学名额申请</a>
+					</dd>
+				</dl>
+				<dl class="fl dl6">
+					<dt><h2>毕业快<br>上班族首选</h2></dt>
+					<dd>
+						热门院校专业，合理配置上班族的时间与学历需求，圆你本科梦想。
+					</dd>
+					<br>
+					<dd>
+						<a class="btn4 green" style="cursor:pointer;">毕业时间咨询</a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div style=" margin-top: 20px;" class="btn">
+			<a class="yellow" style="cursor:pointer; margin-top: -20px;">学历在线咨询入口</a>
+		</div>
+	</div>
+</div>
+<!--提升学历 结束-->
+
+<!--提升学历这些你可能更关注-->
+<div class="section8">
+	<h2 style="margin: 0 auto;" class="title">提升学历  这些你可能更关注</h2>
+	<h3 class="discription">在线获取专业名师指导</h3>        
+	<ul style="cursor: pointer;" class="questions" onclick="doyoo.util.openChat('g=10039888');return false;">
+		<a >
+			<li>
+				<span class="icon1"></span>
+				<p>什么学历比较简单？</p>
+			</li>
+		</a>
+        <a >
+        	<li>
+        		<span class="icon2"></span>
+                <p>需要多少费用？</p>
+            </li>
+        </a>
+        <a >
+        	<li style="margin-right:0">
+        		<span class="icon3"></span>
+                <p>学历政策解读（重要）</p>
+            </li>
+        </a>
+        <a >
+            <li>
+                <span class="icon4"></span>
+                <p>多久可以毕业？</p>
+            </li>
+        </a>
+        <a >
+        	<li>
+                <span class="icon5"></span>
+                <p>报考流程是怎样的?</p>
+            </li>
+        </a>
+        <a >
+        	<li style="margin-right:0">
+                <span class="icon6"></span>
+                <p>如何轻松毕业?</p>
+            </li>
+        </a>
+        <a >
+            <li>
+                <span class="icon7"></span>
+                <p>报考条件限制？</p>
+            </li>
+        </a>
+        <a >
+            <li>
+                <span class="icon8"></span>
+                <p>初中可以考本吗？</p>
+            </li>
+        </a>
+        <a >
+            <li style="margin-right:0">
+                <span class="icon9"></span>
+                <p>学历含金量对比</p>
+            </li>
+        </a>
+        <a >
+            <li>
+                <span class="icon10"></span>
+                <p>什么专业不考英语？</p>
+            </li>
+        </a>
+        <a >
+            <li>
+                <span class="icon11"></span>
+                <p>有哪些专业?</p>
+            </li>
+        </a>
+        <a >
+        	<li style="margin-right:0">
+                <p>更多问题，点击咨询</p>
+            </li>
+        </a>
+            <div class="clear"></div>
+	</ul>
+	<div style=" margin-top: 20px;" class="btn" onclick="doyoo.util.openChat('g=10039888');return false;">
+		<a class="yellow" style="cursor:pointer; margin-top: -20px;">学历在线咨询入口</a>
+	</div>
+</div>
+<!--提升学历这些你可能更关注 结束-->
+
+<!--证书能帮你改变什么-->
+<div class="mk mk7" style="background: url( images/mk7.jpg ) no-repeat top center;"></div>
+<div class="mk mk8" style="background: url( images/mk8.jpg ) no-repeat top center;">
+	<div class="container" onclick="doyoo.util.openChat('g=10039888');return false;">
+		<div class="mk8_con">
+			<dl class="fl">
+				<dt><h2>1 求职就业</h2></dt>
+				<dd>好学历往往是好工作的敲门砖。考个本科学历，不是你为工作发愁，而是好工作主动找你！ </dd>
+			</dl>
+			<dl class="fl">
+				<dt><h2>2 升职加薪</h2></dt>
+				<dd>很多单位本科工资比专科工资高一档(一般500元-1000元不等)，且奖金和提升机会更多。</dd>
+			</dl>
+			<dl class="fl">
+				<dt><h2>3 考评职称</h2></dt>
+				<dd>无学历需工作10年才能评助理级职称，高等学历仅工作2年即可评定，花1年时间自考本科早评定职称！ </dd>
+			</dl>
+			<dl class="fl">
+				<dt><h2>6 考资格证</h2></dt>
+				<dd>考个本科学历，考自己喜欢的职业资格，如：营养师、心理咨询师、公证员、建造师、律师、公务员…… </dd>
+			</dl>
+			<dl class="fl">
+				<dt><h2>5 考研究生</h2></dt>
+				<dd>有了本科学历，可以直接报考全国统招研究生，而专科生只能在毕业满两年后以同等学历考研。</dd>
+			</dl>
+			<dl class="fl">
+				<dt><h2>4 考公务员</h2></dt>
+				<dd>公务员工作稳定，待遇较高，压力较小，修个名校成人本科学历，考公务员不受任何制约。</dd>
+			</dl>
+			<dl class="fl">
+				<dt><h2>7 出国留学</h2></dt>
+				<dd>许多国家都承认我国的成人本科学历，有了本科，可在国外直接读研究生学历，节省很多时间和费用。</dd>
+			</dl>
+			<dl class="fl">
+				<dt><h2>8 积分入户</h2></dt>
+				<dd>大专学历60分、本科学历80分，如今成人本科学历，已经成为积分入户最便捷条件之一。 </dd>
+			</dl>
+			<dl class="fl">
+				<dt><h2>9 规避人事风险</h2></dt>
+				<dd>事业单位提拔干部等基本条件都是本科及以上学历，考个正规学历，提升自己并避免失业风险。</dd>
+			</dl>
+		</div>
+	</div>
+</div>	
+<div class="mk mk9" style="background: url( images/mk9.jpg ) no-repeat top center;">
+	<div class="container" onclick="doyoo.util.openChat('g=10039888');return false;">
+		<div class="content">
+			<a style="cursor:pointer;"><img src="./images/book1.png"></a>
+			<a style="cursor:pointer;"><img src="./images/book2.png"></a>
+			<a style="cursor:pointer;"><img src="./images/book3.png"></a>
+			<a style="cursor:pointer;"><img src="./images/book4.png"></a>
+			<a style="cursor:pointer;"><img src="./images/book5.png"></a>
+			<a style="cursor:pointer;"><img src="./images/book6.png"></a>
+		</div>
+	</div>
+</div>
+<p class="copyright">石家庄特朗教育科技有限公司 版权所有</p>
+  <!-- 底部留言start -->
+<div class="bot-fixed" onclick="doyoo.util.openChat('g=10039888');return false;" style="cursor: pointer;">
+  <div class="bot-main clearfix">
+     <p class="bot-text fl"><span class="bot-year"></span>成人学历招生说明<br>
+      <span class="bot-plan">重点院校<span class="bot-month"></span>月招生计划</span></p>
+     <div class="bot-msg fr">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" src="http://chat.talk99.cn/chat/form?c=10039888&conf=10581"></iframe>
+     </div>
+  </div>
+</div>
+<!-- 底部留言ending -->
+<script src="http://lead.soperson.com/10039888/10088614.js"></script>
+</body>
+</html>
