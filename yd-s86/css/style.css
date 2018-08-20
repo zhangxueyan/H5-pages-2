@@ -1,0 +1,85 @@
+﻿.flex{
+  display: -webkit-flex;  /* 新版本语法: Chrome 21+ */
+  display: flex;          /* 新版本语法: Opera 12.1, Firefox 22+ */  
+}
+.no-bb{
+  border-bottom:0!important;
+}
+.no-bl{
+  border-left:0!important;
+}
+.no-ml{
+  margin-left:0!important;
+}
+body{
+ width:100%;
+ max-width: 750px;
+ margin: 0 auto;
+}
+.s1{
+  background: #2f63b6;
+  padding:0.2rem 0 0.3rem;
+}
+.s-titl{
+  font-size: 0.4rem;
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  text-align: center;
+  padding: 0.1rem 0 0.2rem;
+}
+.s2-titl{
+  color:#000;
+  margin-top:0.2rem;
+}
+.s1-ifBox{
+  background: #fff;
+  border-radius: 0.6rem;
+  padding:0.2rem 0;
+}
+.s1-iframe{
+  width: 90%;
+  margin:0 auto;
+  height: 420px;
+}
+.s1-note{
+  font-size:0.2rem;
+  color:#333;
+  text-align: center;
+}
+.s2-items{
+  width: 72%;
+  margin: 0 auto;
+}
+.s2-item{
+  width: 28%;
+  background: url(../images/yd_02.png) no-repeat center;
+  padding: 0.4rem 0;
+  background-size: 100%;
+  font-size: 0.3rem;
+  color: #fff;
+  line-height: 0.4rem;
+  text-align: center;
+  font-weight: bold;
+  float: left;
+  margin: 0.3rem 0 0 8%;
+}
+.s2-btn{
+ width: 80%;
+ margin: 0.3rem auto 0.1rem;
+ border-radius: 5px;
+ background:#f94645;
+ line-height: 0.7rem;
+ font-size: 0.3rem;
+ color: rgb( 255, 255, 255 );
+ text-align: center;
+ letter-spacing: 0.03rem;
+}
+
+.copyright{
+  font-size:14px;
+  color:#fff;
+  padding:0.2rem 0;
+  text-align: center;
+  background: #2f63b6;
+  margin-top:0.3rem;
+}

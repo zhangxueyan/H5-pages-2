@@ -1,0 +1,133 @@
+﻿.flex{
+  display: -webkit-flex;  /* 新版本语法: Chrome 21+ */
+  display: flex;          /* 新版本语法: Opera 12.1, Firefox 22+ */  
+}
+.no-bb{
+  border-bottom:0!important;
+}
+.no-bl{
+  border-left:0!important;
+}
+.no-ml{
+  margin-left:0!important;
+}
+body{
+ width:100%;
+ max-width: 750px;
+ margin: 0 auto;
+}
+.s1-tbox{
+  background: #27a9f4;
+  padding:0.1rem 0;
+}
+.s1-titl{
+  font-size: 0.4rem;
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  text-align: center;
+  border-top:2px solid #fff;
+  border-bottom: 2px solid #fff;
+  line-height: 0.8rem;
+}
+.s1-iframe{    
+    height:370px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .s2{
+    background-color: rgb( 242, 242, 242 );
+    padding:0.3rem 0;
+  }
+   .s2-tbox{
+    font-size:0;
+    text-align: center;
+   }
+  .s2-titl{
+    display: inline-block;
+    padding: 0 0.9rem;
+  font-size: 0.4rem;
+  color: rgb( 34, 34, 34 );
+  font-weight: bold;
+  text-align: center;
+  line-height: 0.6rem;
+  position: relative;
+  }
+  .s2-titl span{
+        display: block;
+    width: 0.73rem;
+    height: 0.20rem;
+    position: absolute;
+    top: 0.2rem;
+  }
+.s2-icon1{
+      background: url(../images/yd_02_1.png) no-repeat center;
+    background-size: contain;
+    left: 0;
+}
+.s2-icon2{
+      background: url(../images/yd_02_2.png) no-repeat center;
+    background-size: contain;
+    right: 0;
+}
+.s2-items{
+  width:80%;
+  margin:0 auto;
+}
+.s2-item{
+  width:46%;
+  float: left;
+  margin:0.3rem 0 0 8%;
+}
+.s2-item p{
+  font-size: 0.3rem;
+  color: rgb( 243, 67, 52 );
+  font-weight: bold;
+  line-height:0.6rem;
+  text-align: center;
+  background: #fff;
+  box-shadow: 1px 0px 5px 0px rgba(6, 0, 1, 0.25);
+}
+.s3{
+  padding:0.3rem 0;
+}
+.s3-items{
+  width:72%;
+  margin:0 auto;
+}
+.s3-item{
+ width:30%;
+ border: 1px solid rgb( 39, 38, 54 );
+ float: left;
+ padding:0.1rem 0 0.2rem;
+ margin:0.2rem 0 0 5%;
+}
+.s3-icon{
+  width:60%;
+  margin:0 auto;
+}
+
+.s3-item p{
+  width:66%;
+  margin:0.1rem auto 0; 
+  font-size: 0.26rem;
+  color: rgb( 34, 34, 34 );
+  text-transform: uppercase;
+  padding-top:0.1rem;
+  border-top:2px solid #f34334;
+  text-align: center;
+}
+.s4-iframe{
+  width:90%;
+  height: 110px;
+  margin:0.2rem auto 0;
+}
+.s2-titl{
+ margin-top:0.3rem; 
+}
+.copyright{
+  font-size:14px;
+  color:#000;
+  padding:0.2rem 0;
+  text-align: center;
+}
