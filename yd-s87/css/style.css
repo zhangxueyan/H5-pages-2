@@ -1,0 +1,52 @@
+﻿.flex{
+  display: -webkit-flex;  /* 新版本语法: Chrome 21+ */
+  display: flex;          /* 新版本语法: Opera 12.1, Firefox 22+ */  
+}
+.no-bb{
+  border-bottom:0!important;
+}
+.no-bl{
+  border-left:0!important;
+}
+.no-ml{
+  margin-left:0!important;
+}
+body{
+ width:100%;
+ max-width: 750px;
+ margin: 0 auto;
+}
+.s1-titl{
+  font-size: 0.36rem;
+  color: rgb( 34, 34, 34 );
+  font-weight: bold;
+  text-align: center;
+  line-height:1.0rem;
+}
+.s2-tbox{
+      background: #002f8b;
+    padding: 0.1rem 0;
+    margin-top:0.4rem;
+}
+.s2-titl{
+   font-size: 0.4rem;
+    color: rgb( 255, 255, 255 );
+    font-weight: bold;
+    text-align: center;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    line-height: 0.8rem;
+}
+.s2-iframe{
+  padding:10px 5% 0;
+  margin:0 auto;
+  height: 360px;
+  background: #f2f2f2;
+}
+.copyright{
+  font-size:14px;
+  color:#000;
+  padding:0.2rem 0;
+  text-align: center;
+  background: #f2f2f2;
+}

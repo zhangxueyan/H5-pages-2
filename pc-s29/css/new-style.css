@@ -1,0 +1,137 @@
+﻿.clearfix:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+.no-ml{
+  margin-left:0!important;
+}
+.new-page{
+  background-color: #f2f2f2;
+  padding:40px 0 40px;
+}
+
+.new-container{
+  overflow:visible;
+  width:1000px;
+  margin:0 auto;
+}
+.new-h2{
+  width: 200px;
+      background-color: rgb(194, 13, 58);
+  margin:0 auto;
+  font-size: 36px;
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+.new-h3{
+  font-size: 36px;
+  color: rgb( 0, 0, 0 );
+  font-weight: bold;
+  text-align: center;
+  margin-top:10px;
+}
+.new-p{
+  width:580px;
+  margin:20px auto 0;
+  border:1px solid #0046d6;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #003676;
+  text-align: center; 
+  padding:10px 20px;
+  position: relative;
+}
+.new-icon{
+  width:20px;
+  height: 14px;
+  background: url(../image/new/yd_04.jpg) no-repeat center;
+  position: absolute;
+  left: 112px;
+  top:-14px;
+}
+.new-tbox{
+  margin:20px auto 0;
+  border-radius: 5px;
+}
+
+.new-warn{
+  background-color: #f2f2f2;
+  font-size: 30px;
+  color: #e14537;
+  text-align: center;
+  line-height: 50px;
+}
+.new-time{
+  width: 324px;
+  margin:20px auto 0;
+  background: url(../image/new/yd_03.png) no-repeat center; 
+  font-size:0;
+  text-align: center;
+}
+.new-time span{
+  display:inline-block;
+  width:150px;
+  font-size:80px;
+  color:#00418f;
+  padding:10px 0 50px;
+}
+span.date{
+  margin-left:24px;
+}
+.new-note{
+  font-size: 20px;
+  color: rgb( 0, 65, 143 );
+  text-align: center;
+  line-height: 40px;
+}
+.new-titl{
+  color: #333;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top:30px;
+}
+.new-titl span{
+    color: #f34334;
+
+ }
+.new-guis{
+  padding:0 55px;
+  margin-top:20px;
+}
+.new-gui{
+ width: 200px;
+ border-radius: 10px;
+ background-color: rgb(212, 212, 212);
+ font-size: 22px;
+ color: #575656;
+ text-align: center;
+ line-height: 50px;
+ float: left;
+ margin:20px 0 0 30px;
+}
+.new-areas .new-gui{
+  border-radius: 5px;
+  background: #e8ebfc;
+  color: #2b3861;
+  font-weight: normal;
+}
+.new-areas .new-more{
+ background-color: rgb(238, 89, 53);
+ color:#fff; 
+}
+.new-gui:hover{
+  background: #ef5935;
+  color:#fff;
+}
+
+
+.anniu{width: 324px; overflow: hidden; margin:50px auto 0;}
+.anniu button{ width: 324px;  float: left;  display: block; border: 0; line-height: 65px; font-size: 26px;border-radius:33px;    letter-spacing: 3px;}
+.anniu button.bu{ background: #ef5935;text-align: center;font-weight: bold;}
+.anniu button.bu a{ color: #fff; display: block; font-family: "微软雅黑"; font-weight: bold;}
+.anniu button.bu1{background: #fff;}
