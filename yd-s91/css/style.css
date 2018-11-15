@@ -1,0 +1,307 @@
+﻿.no-bb{
+  border-bottom:0!important;
+}
+.no-bl{
+  border-left:0!important;
+}
+.no-br{
+  border-right:0!important; 
+}
+.no-ml{
+  margin-left:0!important;
+}
+body{
+ width:100%;
+ max-width: 750px;
+ margin: 0 auto;
+ padding-top:0.8rem;
+}
+
+nav{
+  width: 100%;
+  background: #016492;
+  padding:0.2rem;
+  position: fixed;
+  left:0;
+  top: 0;
+  z-index: 10;
+}
+nav a{
+  width: 25%;
+  font-size: 0.3rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.4rem;
+  border-left:1px solid #ffffff;
+  letter-spacing: 0.02rem;
+  float: left;
+}
+.s1{
+  background:#019fe8;
+  padding:1.0rem 0;
+  position: relative;
+}
+.s1-titl{
+  font-size: 0.48rem;
+  color: rgb( 255, 255, 255 );
+  text-align: center;
+  text-shadow: 0px 0px 6px rgb( 0, 0, 0 );
+  line-height: 1.0rem;
+}
+.s1-subts{
+  margin-top:0.2rem;
+}
+.s1-subt{
+  font-size: 0.22rem;
+  color: rgb( 0, 41, 60 );
+  text-align: center;
+  line-height: 0.4rem;
+}
+.s1-cir{
+  color:#fff;
+}
+.s1-icon{
+  display: inline-block;
+  width:0.24rem;
+  height: 0.24rem;
+  vertical-align: middle;
+}
+.s1-icon1{
+  background: url(../images/yd_01.png) no-repeat center;
+  background-size: contain;
+}
+.s1-icon2{
+  background: url(../images/yd_02.png) no-repeat center;
+  background-size: contain;
+}
+.s1-items{
+  width:80%;
+  margin:0 auto;
+  padding:0.15rem 0;
+  border-radius: 0.2rem;
+  background-color: rgb( 255, 255, 255 );
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.63);
+  position: absolute;
+  left:50%;
+  margin-left:-40%;
+  bottom: -1rem;
+}
+.s1-item{
+  width:33%;
+  border-left:1px dashed #636363;
+  padding:0.2rem 0;
+  float: left;
+  position: relative;
+}
+.s1-item2{
+  width:34%;
+}
+.s1-item p{
+  font-size: 0.24rem;
+  color: rgb( 98, 99, 99 );
+  text-align: center;
+}
+.s1-item a{
+  width: 64%;
+  background-color: rgb( 99, 99, 99 );
+  font-size: 0.2rem;
+  color: rgb( 255, 255, 255 );
+  text-align: center;
+  margin:0.1rem auto 0;
+  line-height:0.4rem;
+  border-radius:0.2rem;
+}
+.s1-icon3{
+  width: 0.32rem;
+  height: 0.32rem;
+  border-radius: 50%;
+  background-color: rgb( 255, 234, 0 );
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.63);
+  position: absolute;
+  right: 0.2rem;
+  top: -0.3rem;
+}
+
+.椭圆_1 {
+  border-radius: 50%;
+  background-color: rgb( 255, 234, 0 );
+  box-shadow: 3px 5.196px 6px 0px rgb( 0, 0, 0 );
+  position: absolute;
+  left: 612px;
+  top: 402px;
+  width: 32px;
+  height: 31px;
+  z-index: 16;
+}
+
+.s2{
+  margin-top:1.4rem;
+}
+.s2-titl{
+  font-size: 0.36rem;
+  color: rgb( 99, 99, 99 );
+  text-align: center;
+}
+.s2-titl span{
+  font-weight: bold;
+}
+.s1-line{
+  width:0.75rem;
+  height: 0.06rem;
+  border-top:1px solid #fff;
+  border-bottom: 1px solid #fff;
+  margin:0 auto;
+}
+.s2-line{
+  border-color:#019fe8;
+  margin-top:0.2rem;
+}
+.s2-items{
+  width:80%;
+  margin:0 auto;
+}
+.s2-item{
+  width: 30%;
+ border-radius: 0.25rem;
+ background-color: rgb( 255, 255, 255 );
+ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.63);
+ padding:0.3rem 0;
+ float:left;
+ margin:0.3rem 0 0 5%;
+ position: relative;
+}
+.s2-icon1{
+    width: 0.44rem;
+    height: 0.44rem;
+    background: url(../images/yd_09.png) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.1rem;
+}
+.s2-iteml{
+  width:47.5%;
+}
+.s2-pic{
+  width:0.85rem;
+  height: 0.85rem;
+  margin:0 auto;
+}
+.s2-pic1{
+  background: url(../images/yd_03.png) no-repeat center;
+  background-size: contain;
+}
+.s2-pic2{
+  background: url(../images/yd_04.png) no-repeat center;
+  background-size: contain;
+}
+.s2-pic3{
+  background: url(../images/yd_05.png) no-repeat center;
+  background-size: contain;
+}
+.s2-pic4{
+  background: url(../images/yd_06.png) no-repeat center;
+  background-size: contain;
+}
+.s2-pic5{
+  background: url(../images/yd_07.png) no-repeat center;
+  background-size: contain;
+}
+.s2-txt{
+  font-size: 0.24rem;
+  color: rgb( 98, 99, 99 );
+  font-weight: bold;
+  text-align: center;
+}
+.s2-btn{
+  width: 3.12rem;
+  line-height: 0.6rem;
+  border-radius:0.3rem;
+  padding:0 0.45rem;
+  background-color: rgb( 1, 159, 232 );
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.63);
+  font-size: 0.2rem;
+  color: rgb( 255, 255, 255 );
+  text-transform: uppercase;
+  text-align: center;
+  margin:0.4rem auto 0;
+  position: relative;
+}
+.s2-cir{
+  width: 0.34rem;
+  height: 0.34rem;
+  background:url(../images/yd_08.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left:0.1rem;
+  top:0.13rem;
+}
+.copyright{
+  background:#636363;
+  font-size:14px;
+  color:#fff;
+  padding:0.2rem 0;
+  text-align: center;
+  margin-top:0.5rem;
+}
+.mask{
+  width:100%;
+  height: 100%;
+  background:rgba(0,0,0,0.5);
+  position: fixed;
+  left:0;
+  top:0;
+  z-index:150;
+  display: none;
+}
+.popup{
+  width:82%;
+  background: #fff;
+  border-radius:0.3rem;
+  position: fixed;
+  left:50%;
+  margin-left:-41%;
+  top:50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-bottom:0.2rem;
+  z-index:200;
+  display: none;
+}
+.pop-titl{
+  background:#019fe8;
+  line-height: 0.7rem;
+  font-size:0.44rem;
+  color:#fff;
+  text-align: center;
+  border-top-left-radius:0.3rem;
+  border-top-right-radius:0.3rem;
+}
+.pop-titl span{
+  font-size:0.22rem;
+}
+.s1-iframe{
+  width:90%;
+  margin:0 auto;
+  height: 280px;
+}
+.pop-close{
+  width:0.3rem;
+  height: 0.3rem;
+  font-size: 0.34rem;
+  color: #fff;
+  position: absolute;
+  right: 0.2rem;
+  top:0.1rem;
+}
+.pop-note{
+    font-size: 0.22rem;
+    color: rgb( 51, 51, 51 );
+    text-align: center;
+    padding: 0 0.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
